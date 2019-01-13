@@ -1,2 +1,4 @@
 (sym_lib_table
+  (lib (name calidus-rescue)(type Legacy)(uri ${KIPRJMOD}/calidus-rescue.lib)(options "")(descr ""))
+  (lib (name tda7293)(type Legacy)(uri ${KIPRJMOD}/tda7293.lib)(options "")(descr ""))
 )

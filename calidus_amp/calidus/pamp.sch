@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L tda7293:TDA7293 U1
+L calidus-rescue:TDA7293-tda7293 U1
 U 1 1 5C37C649
 P 3900 2500
+AR Path="/5C37C649" Ref="U1"  Part="1" 
+AR Path="/5C37BC7C/5C37C649" Ref="U1"  Part="1" 
 F 0 "U1" H 4341 2546 50  0000 L CNN
 F 1 "TDA7293" H 4341 2455 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical" H 3900 2500 50  0001 C CIN
@@ -410,9 +412,11 @@ Text GLabel 3600 3500 3    50   Input ~ 0
 Text GLabel 3700 3500 3    50   Input ~ 0
 -pwvs
 $Comp
-L tda7293:TDA7293 U2
+L calidus-rescue:TDA7293-tda7293 U2
 U 1 1 5C38B287
 P 3900 5900
+AR Path="/5C38B287" Ref="U2"  Part="1" 
+AR Path="/5C37BC7C/5C38B287" Ref="U2"  Part="1" 
 F 0 "U2" H 4341 5946 50  0000 L CNN
 F 1 "TDA7293" H 4341 5855 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical" H 3900 5900 50  0001 C CIN
