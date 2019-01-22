@@ -45,6 +45,12 @@ main amplifier PCB.
 Input OPAMP should be JFET type since JFET differential inputs are more immune 
 to EMI.
 
+Input low-pass filter
+---------------------
+
+URL: http://www.johnhearfield.com/RC/RC4.htm
+
+
 Differential buffer
 -------------------
 

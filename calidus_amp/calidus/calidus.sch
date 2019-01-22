@@ -136,23 +136,21 @@ F0 "preamp" 50
 F1 "preamp.sch" 50
 F2 "potout_l" I R 3100 4000 50 
 F3 "potin_l" O R 3100 4100 50 
-F4 "out_l" O R 3100 4200 50 
 F5 "in_l" I L 1900 4000 50 
 F6 "in_r" I L 1900 4200 50 
 F7 "potin_r" O R 3100 4600 50 
 F8 "potout_r" I R 3100 4500 50 
-F9 "our_r" O R 3100 4700 50 
 $EndSheet
 Wire Wire Line
-	3100 4200 4000 4200
+	3200 3600 4000 3600
 Wire Wire Line
-	4000 4200 4000 1800
+	4000 3600 4000 1800
 Wire Wire Line
 	4000 1800 4300 1800
 Wire Wire Line
-	3100 4700 4100 4700
+	3300 3700 4100 3700
 Wire Wire Line
-	4100 4700 4100 2000
+	4100 3700 4100 2000
 Wire Wire Line
 	4100 2000 4300 2000
 $Comp
@@ -169,7 +167,7 @@ $EndComp
 Wire Wire Line
 	3100 4100 3500 4100
 Wire Wire Line
-	3500 4000 3100 4000
+	3500 4000 3200 4000
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5C4396C1
@@ -184,7 +182,7 @@ $EndComp
 Wire Wire Line
 	3500 4600 3100 4600
 Wire Wire Line
-	3100 4500 3500 4500
+	3100 4500 3300 4500
 Wire Wire Line
 	3400 4800 3400 4400
 Wire Wire Line
@@ -242,4 +240,14 @@ Wire Wire Line
 	6000 2400 6000 3900
 Wire Wire Line
 	6000 3900 5500 3900
+Wire Wire Line
+	3200 3600 3200 4000
+Connection ~ 3200 4000
+Wire Wire Line
+	3200 4000 3100 4000
+Wire Wire Line
+	3300 3700 3300 4500
+Connection ~ 3300 4500
+Wire Wire Line
+	3300 4500 3500 4500
 $EndSCHEMATC
