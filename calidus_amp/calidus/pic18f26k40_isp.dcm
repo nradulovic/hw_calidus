@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PIC18F26K40_ISP
+D 64K Flash, 3615Byte RAM, 1024Byte EEPROM, PIC18 Microcontroller ADC PWM SPI I2C USART in SSOP28/DIP28 package
+K microcontroller PIC18F flash XLP
+F http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF26-45-46K40-Data-Sheet-DS40001816F.pdf
+$ENDCMP
+#
+#End Doc Library

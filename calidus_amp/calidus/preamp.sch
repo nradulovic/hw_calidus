@@ -1,0 +1,430 @@
+EESchema Schematic File Version 4
+LIBS:calidus-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 1 1 5C4751F4
+P 4100 2600
+F 0 "U?" H 4100 2967 50  0000 C CNN
+F 1 "NE5532" H 4100 2876 50  0000 C CNN
+F 2 "" H 4100 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 4100 2600 50  0001 C CNN
+	1    4100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C47524D
+P 4350 4500
+F 0 "R?" V 3961 4500 50  0000 C CNN
+F 1 "10k" V 4052 4500 50  0000 C CNN
+F 2 "" V 4280 4500 50  0001 C CNN
+F 3 "~" H 4350 4500 50  0001 C CNN
+F 4 "1/4" V 4143 4500 50  0000 C CNN "Power"
+F 5 "MF" V 4234 4500 50  0000 C CNN "Type"
+	1    4350 4500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4752CF
+P 3400 3650
+F 0 "R?" H 3330 3513 50  0000 R CNN
+F 1 "10k" H 3330 3604 50  0000 R CNN
+F 2 "" V 3330 3650 50  0001 C CNN
+F 3 "~" H 3400 3650 50  0001 C CNN
+F 4 "1/4" H 3330 3695 50  0000 R CNN "Power"
+F 5 "MF" H 3330 3786 50  0000 R CNN "Type"
+	1    3400 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C475376
+P 2500 2500
+F 0 "R?" V 2889 2500 50  0000 C CNN
+F 1 "100" V 2798 2500 50  0000 C CNN
+F 2 "" V 2430 2500 50  0001 C CNN
+F 3 "~" H 2500 2500 50  0001 C CNN
+F 4 "1/4" V 2707 2500 50  0000 C CNN "Power"
+F 5 "MF" V 2616 2500 50  0000 C CNN "Type"
+	1    2500 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 2500 2800 2500
+Wire Wire Line
+	3400 3500 3400 2500
+Connection ~ 3400 2500
+Wire Wire Line
+	3400 2500 3800 2500
+$Comp
+L power:GNDS #PWR?
+U 1 1 5C4753E2
+P 2200 3900
+F 0 "#PWR?" H 2200 3650 50  0001 C CNN
+F 1 "GNDS" H 2205 3727 50  0000 C CNN
+F 2 "" H 2200 3900 50  0001 C CNN
+F 3 "" H 2200 3900 50  0001 C CNN
+	1    2200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C47541E
+P 2800 3650
+F 0 "C?" H 2915 3787 50  0000 L CNN
+F 1 "220p" H 2915 3696 50  0000 L CNN
+F 2 "" H 2838 3500 50  0001 C CNN
+F 3 "~" H 2800 3650 50  0001 C CNN
+F 4 "100V" H 2915 3605 50  0000 L CNN "Voltage"
+F 5 "NP0" H 2915 3514 50  0000 L CNN "Type"
+	1    2800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS_x2_AAC D?
+U 1 1 5C4755FE
+P 1900 3900
+F 0 "D?" V 1946 3978 50  0000 L CNN
+F 1 "D_TVS_x2_AAC" V 1855 3978 50  0000 L CNN
+F 2 "" H 1750 3900 50  0001 C CNN
+F 3 "~" H 1750 3900 50  0001 C CNN
+	1    1900 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4500 3700 4500
+Wire Wire Line
+	3700 2700 3800 2700
+Wire Wire Line
+	3700 5100 3700 4500
+Wire Wire Line
+	4500 4500 4600 4500
+Wire Wire Line
+	4600 4500 4600 5200
+$Comp
+L Device:C C?
+U 1 1 5C4756FC
+P 3950 4200
+F 0 "C?" V 4110 4200 50  0000 C CNN
+F 1 "47p" V 4201 4200 50  0000 C CNN
+F 2 "" H 3988 4050 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+F 4 "100V" V 4292 4200 50  0000 C CNN "Voltage"
+F 5 "NP0" V 4383 4200 50  0000 C CNN "Type"
+	1    3950 4200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3800 4200 3700 4200
+Wire Wire Line
+	3700 4200 3700 4500
+Connection ~ 3700 4500
+Wire Wire Line
+	4100 4200 4600 4200
+Wire Wire Line
+	4600 4200 4600 4500
+Connection ~ 4600 4500
+$Comp
+L Device:CP C?
+U 1 1 5C4758D5
+P 3100 2500
+F 0 "C?" V 2755 2500 50  0000 C CNN
+F 1 "100u" V 2846 2500 50  0000 C CNN
+F 2 "" H 3138 2350 50  0001 C CNN
+F 3 "~" H 3100 2500 50  0001 C CNN
+F 4 "35V" V 2937 2500 50  0000 C CNN "Voltage"
+	1    3100 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 2500 3400 2500
+Text HLabel 5600 2800 2    50   Input ~ 0
+potout_l
+Text HLabel 5600 2600 2    50   Output ~ 0
+potin_l
+Text HLabel 5600 3000 2    50   Output ~ 0
+out_l
+Wire Wire Line
+	5600 2800 5500 2800
+Wire Wire Line
+	5500 2800 5500 3000
+Wire Wire Line
+	5500 3000 5600 3000
+$Comp
+L Device:R R?
+U 1 1 5C475D8B
+P 5500 3650
+F 0 "R?" H 5430 3513 50  0000 R CNN
+F 1 "10k" H 5430 3604 50  0000 R CNN
+F 2 "" V 5430 3650 50  0001 C CNN
+F 3 "~" H 5500 3650 50  0001 C CNN
+F 4 "1/4" H 5430 3695 50  0000 R CNN "Power"
+F 5 "MF" H 5430 3786 50  0000 R CNN "Type"
+	1    5500 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 3500 5500 3000
+Connection ~ 5500 3000
+Wire Wire Line
+	2800 3500 2800 2500
+Connection ~ 2800 2500
+Wire Wire Line
+	2800 2500 2950 2500
+Text HLabel 1800 2500 0    50   Input ~ 0
+in_l
+Wire Wire Line
+	1800 2500 1900 2500
+Wire Wire Line
+	1900 3550 1900 2500
+Connection ~ 1900 2500
+Wire Wire Line
+	1900 2500 2350 2500
+Wire Wire Line
+	2050 3900 2200 3900
+Wire Wire Line
+	2800 3900 2800 3800
+Connection ~ 2200 3900
+Wire Wire Line
+	2200 3900 2800 3900
+Wire Wire Line
+	2800 3900 3400 3900
+Wire Wire Line
+	3400 3900 3400 3800
+Connection ~ 2800 3900
+Wire Wire Line
+	3400 3900 5500 3900
+Wire Wire Line
+	5500 3900 5500 3800
+Connection ~ 3400 3900
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 2 1 5C41ADA8
+P 4100 5200
+F 0 "U?" H 4100 5567 50  0000 C CNN
+F 1 "NE5532" H 4100 5476 50  0000 C CNN
+F 2 "" H 4100 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 4100 5200 50  0001 C CNN
+	2    4100 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 3 1 5C41AE35
+P 2000 6700
+F 0 "U?" H 1958 6746 50  0000 L CNN
+F 1 "NE5532" H 1958 6655 50  0000 L CNN
+F 2 "" H 2000 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 2000 6700 50  0001 C CNN
+	3    2000 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2600 4600 2600
+Wire Wire Line
+	3700 5100 3800 5100
+Wire Wire Line
+	4400 5200 4600 5200
+$Comp
+L Device:R R?
+U 1 1 5C41BC02
+P 3950 3300
+F 0 "R?" V 3561 3300 50  0000 C CNN
+F 1 "10k" V 3652 3300 50  0000 C CNN
+F 2 "" V 3880 3300 50  0001 C CNN
+F 3 "~" H 3950 3300 50  0001 C CNN
+F 4 "1/4" V 3743 3300 50  0000 C CNN "Power"
+F 5 "MF" V 3834 3300 50  0000 C CNN "Type"
+	1    3950 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3300 3700 3300
+Wire Wire Line
+	3700 2700 3700 3300
+Wire Wire Line
+	4100 3300 4600 3300
+Wire Wire Line
+	4600 3300 4600 2600
+$Comp
+L Device:C C?
+U 1 1 5C41BC0F
+P 4350 3600
+F 0 "C?" V 4510 3600 50  0000 C CNN
+F 1 "47p" V 4601 3600 50  0000 C CNN
+F 2 "" H 4388 3450 50  0001 C CNN
+F 3 "~" H 4350 3600 50  0001 C CNN
+F 4 "100V" V 4692 3600 50  0000 C CNN "Voltage"
+F 5 "NP0" V 4783 3600 50  0000 C CNN "Type"
+	1    4350 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3600 3700 3600
+Wire Wire Line
+	3700 3600 3700 3300
+Connection ~ 3700 3300
+Wire Wire Line
+	4500 3600 4600 3600
+Wire Wire Line
+	4600 3600 4600 3300
+Connection ~ 4600 3300
+Connection ~ 4600 2600
+Wire Wire Line
+	3400 3900 3400 4000
+Wire Wire Line
+	3400 5300 3800 5300
+Wire Wire Line
+	2800 3900 2800 4000
+Wire Wire Line
+	2800 5300 2950 5300
+Connection ~ 3400 5300
+Wire Wire Line
+	1900 4250 1900 5300
+Wire Wire Line
+	1900 5300 2350 5300
+Connection ~ 2800 5300
+Wire Wire Line
+	1800 5300 1900 5300
+Connection ~ 1900 5300
+Text HLabel 1800 5300 0    50   Input ~ 0
+in_r
+$Comp
+L Device:R R?
+U 1 1 5C4212C9
+P 2500 5300
+F 0 "R?" V 2889 5300 50  0000 C CNN
+F 1 "100" V 2798 5300 50  0000 C CNN
+F 2 "" V 2430 5300 50  0001 C CNN
+F 3 "~" H 2500 5300 50  0001 C CNN
+F 4 "1/4" V 2707 5300 50  0000 C CNN "Power"
+F 5 "MF" V 2616 5300 50  0000 C CNN "Type"
+	1    2500 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 5300 2800 5300
+$Comp
+L Device:C C?
+U 1 1 5C421335
+P 2800 4150
+F 0 "C?" H 2915 4287 50  0000 L CNN
+F 1 "220p" H 2915 4196 50  0000 L CNN
+F 2 "" H 2838 4000 50  0001 C CNN
+F 3 "~" H 2800 4150 50  0001 C CNN
+F 4 "100V" H 2915 4105 50  0000 L CNN "Voltage"
+F 5 "NP0" H 2915 4014 50  0000 L CNN "Type"
+	1    2800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4300 2800 5300
+Wire Wire Line
+	3250 5300 3400 5300
+$Comp
+L Device:R R?
+U 1 1 5C421401
+P 3400 4150
+F 0 "R?" H 3330 4013 50  0000 R CNN
+F 1 "10k" H 3330 4104 50  0000 R CNN
+F 2 "" V 3330 4150 50  0001 C CNN
+F 3 "~" H 3400 4150 50  0001 C CNN
+F 4 "1/4" H 3330 4195 50  0000 R CNN "Power"
+F 5 "MF" H 3330 4286 50  0000 R CNN "Type"
+	1    3400 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4300 3400 5300
+$Comp
+L Device:CP C?
+U 1 1 5C4215F5
+P 3100 5300
+F 0 "C?" V 3263 5300 50  0000 C CNN
+F 1 "100u" V 3354 5300 50  0000 C CNN
+F 2 "" H 3138 5150 50  0001 C CNN
+F 3 "~" H 3100 5300 50  0001 C CNN
+F 4 "35V" V 3445 5300 50  0000 C CNN "Voltage"
+	1    3100 5300
+	0    1    1    0   
+$EndComp
+Text HLabel 5600 5200 2    50   Output ~ 0
+potin_r
+Text HLabel 5600 5000 2    50   Input ~ 0
+potout_r
+Text HLabel 5600 4800 2    50   Output ~ 0
+our_r
+Wire Wire Line
+	5600 5000 5500 5000
+Wire Wire Line
+	5500 5000 5500 4800
+Connection ~ 5500 3900
+Connection ~ 4600 5200
+Wire Wire Line
+	5600 4800 5500 4800
+Connection ~ 5500 4800
+Wire Wire Line
+	5500 4800 5500 4300
+$Comp
+L Device:R R?
+U 1 1 5C430114
+P 5500 4150
+F 0 "R?" H 5430 4013 50  0000 R CNN
+F 1 "10k" H 5430 4104 50  0000 R CNN
+F 2 "" V 5430 4150 50  0001 C CNN
+F 3 "~" H 5500 4150 50  0001 C CNN
+F 4 "1/4" H 5430 4195 50  0000 R CNN "Power"
+F 5 "MF" H 5430 4286 50  0000 R CNN "Type"
+	1    5500 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 4000 5500 3900
+Wire Wire Line
+	5000 2600 5600 2600
+Wire Wire Line
+	4600 2600 4700 2600
+Wire Wire Line
+	5000 5200 5600 5200
+Wire Wire Line
+	4600 5200 4700 5200
+$Comp
+L Device:CP C?
+U 1 1 5C435076
+P 4850 5200
+F 0 "C?" V 5013 5200 50  0000 C CNN
+F 1 "100u" V 5104 5200 50  0000 C CNN
+F 2 "" H 4888 5050 50  0001 C CNN
+F 3 "~" H 4850 5200 50  0001 C CNN
+F 4 "35V" V 5195 5200 50  0000 C CNN "Voltage"
+	1    4850 5200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C42D4B4
+P 4850 2600
+F 0 "C?" V 5013 2600 50  0000 C CNN
+F 1 "100u" V 5104 2600 50  0000 C CNN
+F 2 "" H 4888 2450 50  0001 C CNN
+F 3 "~" H 4850 2600 50  0001 C CNN
+F 4 "35V" V 5195 2600 50  0000 C CNN "Voltage"
+	1    4850 2600
+	0    -1   1    0   
+$EndComp
+$EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -15,10 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2100 1600 1200 1100
+S 1900 1600 1200 1100
 U 5C37BC48
 F0 "psupply" 50
 F1 "psupply.sch" 50
+F2 "pri_hi" I L 1900 1800 50 
+F3 "pri_mid" I L 1900 1900 50 
+F4 "pri_lo" I L 1900 2000 50 
 $EndSheet
 $Sheet
 S 4300 1600 1200 1100
@@ -31,5 +34,212 @@ F4 "mute" I R 5500 2500 50
 F5 "overload" O R 5500 2400 50 
 F6 "in_r" I L 4300 2000 50 
 F7 "out_r" O R 5500 2000 50 
+F8 "stby" I R 5500 2600 50 
 $EndSheet
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5C47FAB8
+P 1400 1900
+F 0 "J2" H 1320 2217 50  0000 C CNN
+F 1 "Conn_01x03" H 1320 2126 50  0000 C CNN
+F 2 "" H 1400 1900 50  0001 C CNN
+F 3 "~" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1800 1900 1800
+Wire Wire Line
+	1600 1900 1900 1900
+Wire Wire Line
+	1600 2000 1900 2000
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5C47FB17
+P 1400 4100
+F 0 "J3" H 1320 4417 50  0000 C CNN
+F 1 "Conn_01x03" H 1320 4326 50  0000 C CNN
+F 2 "" H 1400 4100 50  0001 C CNN
+F 3 "~" H 1400 4100 50  0001 C CNN
+	1    1400 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR01
+U 1 1 5C47FB54
+P 1700 4300
+F 0 "#PWR01" H 1700 4050 50  0001 C CNN
+F 1 "GNDS" H 1705 4127 50  0000 C CNN
+F 2 "" H 1700 4300 50  0001 C CNN
+F 3 "" H 1700 4300 50  0001 C CNN
+	1    1700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4300 1700 4100
+Wire Wire Line
+	1700 4100 1600 4100
+Wire Wire Line
+	1600 4000 1900 4000
+Wire Wire Line
+	1600 4200 1900 4200
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5C47FBF8
+P 6300 1800
+F 0 "J1" H 6219 1475 50  0000 C CNN
+F 1 "Conn_01x02" H 6219 1566 50  0000 C CNN
+F 2 "" H 6300 1800 50  0001 C CNN
+F 3 "~" H 6300 1800 50  0001 C CNN
+	1    6300 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5C47FC30
+P 6300 2000
+F 0 "J4" H 6380 1992 50  0000 L CNN
+F 1 "Conn_01x02" H 6380 1901 50  0000 L CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "~" H 6300 2000 50  0001 C CNN
+	1    6300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1800 6100 1800
+Wire Wire Line
+	5500 2000 6100 2000
+Wire Wire Line
+	6100 1700 6000 1700
+Wire Wire Line
+	6000 1700 6000 2100
+Wire Wire Line
+	6000 2100 6100 2100
+$Comp
+L power:GNDPWR #PWR02
+U 1 1 5C47FEE1
+P 6000 2200
+F 0 "#PWR02" H 6000 2000 50  0001 C CNN
+F 1 "GNDPWR" H 6004 2046 50  0000 C CNN
+F 2 "" H 6000 2150 50  0001 C CNN
+F 3 "" H 6000 2150 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2200 6000 2100
+Connection ~ 6000 2100
+$Sheet
+S 1900 3800 1200 1100
+U 5C4751C0
+F0 "preamp" 50
+F1 "preamp.sch" 50
+F2 "potout_l" I R 3100 4000 50 
+F3 "potin_l" O R 3100 4100 50 
+F4 "out_l" O R 3100 4200 50 
+F5 "in_l" I L 1900 4000 50 
+F6 "in_r" I L 1900 4200 50 
+F7 "potin_r" O R 3100 4600 50 
+F8 "potout_r" I R 3100 4500 50 
+F9 "our_r" O R 3100 4700 50 
+$EndSheet
+Wire Wire Line
+	3100 4200 4000 4200
+Wire Wire Line
+	4000 4200 4000 1800
+Wire Wire Line
+	4000 1800 4300 1800
+Wire Wire Line
+	3100 4700 4100 4700
+Wire Wire Line
+	4100 4700 4100 2000
+Wire Wire Line
+	4100 2000 4300 2000
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C438B71
+P 3700 4000
+F 0 "J?" H 3620 4317 50  0000 C CNN
+F 1 "Conn_01x03" H 3620 4226 50  0000 C CNN
+F 2 "" H 3700 4000 50  0001 C CNN
+F 3 "~" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3100 4100 3500 4100
+Wire Wire Line
+	3500 4000 3100 4000
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C4396C1
+P 3700 4500
+F 0 "J?" H 3620 4817 50  0000 C CNN
+F 1 "Conn_01x03" H 3620 4726 50  0000 C CNN
+F 2 "" H 3700 4500 50  0001 C CNN
+F 3 "~" H 3700 4500 50  0001 C CNN
+	1    3700 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 4600 3100 4600
+Wire Wire Line
+	3100 4500 3500 4500
+Wire Wire Line
+	3400 4800 3400 4400
+Wire Wire Line
+	3400 4400 3500 4400
+Wire Wire Line
+	3400 4400 3400 3900
+Wire Wire Line
+	3400 3900 3500 3900
+Connection ~ 3400 4400
+$Comp
+L power:GNDS #PWR?
+U 1 1 5C43A2D2
+P 3400 4800
+F 0 "#PWR?" H 3400 4550 50  0001 C CNN
+F 1 "GNDS" H 3405 4627 50  0000 C CNN
+F 2 "" H 3400 4800 50  0001 C CNN
+F 3 "" H 3400 4800 50  0001 C CNN
+	1    3400 4800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4300 3800 1200 1100
+U 5C43C4AB
+F0 "Control and Monitoring Unit" 50
+F1 "cmu.sch" 50
+F2 "mute" O R 5500 4000 50 
+F3 "stby" O R 5500 4100 50 
+F4 "power_led" O R 5500 4800 50 
+F5 "overload_led" O R 5500 4700 50 
+F6 "overload" I R 5500 3900 50 
+F7 "ac_in" I R 5500 4500 50 
+F8 "mute_key" I R 5500 4300 50 
+F9 "icspclk" B L 4300 4200 50 
+F10 "icspdat" B L 4300 4300 50 
+F11 "uart_rx" I L 4300 4400 50 
+F12 "uart_tx" O L 4300 4500 50 
+F13 "i2c_sda" B L 4300 4600 50 
+F14 "i2c_scl" B L 4300 4700 50 
+$EndSheet
+Wire Wire Line
+	5500 2600 5800 2600
+Wire Wire Line
+	5800 2600 5800 4100
+Wire Wire Line
+	5800 4100 5500 4100
+Wire Wire Line
+	5500 4000 5900 4000
+Wire Wire Line
+	5900 4000 5900 2500
+Wire Wire Line
+	5900 2500 5500 2500
+Wire Wire Line
+	5500 2400 6000 2400
+Wire Wire Line
+	6000 2400 6000 3900
+Wire Wire Line
+	6000 3900 5500 3900
 $EndSCHEMATC

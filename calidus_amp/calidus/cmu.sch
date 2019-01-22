@@ -1,0 +1,495 @@
+EESchema Schematic File Version 4
+LIBS:calidus-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C444574
+P 4900 5200
+F 0 "#PWR?" H 4900 4950 50  0001 C CNN
+F 1 "GNDD" H 4904 5045 50  0000 C CNN
+F 2 "" H 4900 5200 50  0001 C CNN
+F 3 "" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5200 4900 5100
+Wire Wire Line
+	4900 5100 5000 5100
+Wire Wire Line
+	5000 5100 5000 5000
+Connection ~ 4900 5100
+Wire Wire Line
+	4900 5100 4900 5000
+Text GLabel 1200 1400 0    50   Input ~ 0
++pdvs
+Wire Wire Line
+	1200 1400 1500 1400
+Wire Wire Line
+	1500 1400 1500 1500
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C444792
+P 1500 1900
+F 0 "#PWR?" H 1500 1650 50  0001 C CNN
+F 1 "GNDD" H 1504 1745 50  0000 C CNN
+F 2 "" H 1500 1900 50  0001 C CNN
+F 3 "" H 1500 1900 50  0001 C CNN
+	1    1500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C46D3BF
+P 1500 1650
+F 0 "C?" H 1615 1696 50  0000 L CNN
+F 1 "100n" H 1615 1605 50  0000 L CNN
+F 2 "" H 1538 1500 50  0001 C CNN
+F 3 "~" H 1500 1650 50  0001 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1800 1500 1900
+$Comp
+L pic18f26k40_isp:PIC18F26K40_ISP U?
+U 1 1 5C470457
+P 5100 4000
+F 0 "U?" H 5100 5178 50  0000 C CNN
+F 1 "PIC18F26K40_ISP" H 5100 5087 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 4600 3500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF26-45-46K40-Data-Sheet-DS40001816F.pdf" H 5100 3950 50  0001 C CNN
+	1    5100 4000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4300 3200
+NoConn ~ 4300 3300
+NoConn ~ 4300 3400
+NoConn ~ 4300 3500
+NoConn ~ 4300 3600
+NoConn ~ 4300 3700
+NoConn ~ 4300 3800
+NoConn ~ 4300 3900
+Text HLabel 6800 3500 2    50   Output ~ 0
+mute
+Wire Wire Line
+	6800 3500 5900 3500
+Text HLabel 6800 3600 2    50   Output ~ 0
+stby
+$Comp
+L Device:R R?
+U 1 1 5C482C99
+P 6200 2850
+F 0 "R?" H 6270 2896 50  0000 L CNN
+F 1 "10k" H 6270 2805 50  0000 L CNN
+F 2 "" V 6130 2850 50  0001 C CNN
+F 3 "~" H 6200 2850 50  0001 C CNN
+	1    6200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3000 6200 3200
+Wire Wire Line
+	6200 3200 5900 3200
+Text GLabel 6200 2600 1    50   Input ~ 0
++pdvs
+Wire Wire Line
+	6200 2700 6200 2600
+NoConn ~ 5900 3400
+Wire Wire Line
+	6800 3600 5900 3600
+NoConn ~ 5900 3300
+$Comp
+L Device:R R?
+U 1 1 5C48301D
+P 8100 2450
+F 0 "R?" H 8030 2404 50  0000 R CNN
+F 1 "620" H 8030 2495 50  0000 R CNN
+F 2 "" V 8030 2450 50  0001 C CNN
+F 3 "~" H 8100 2450 50  0001 C CNN
+	1    8100 2450
+	-1   0    0    1   
+$EndComp
+Text HLabel 8100 2200 1    50   Output ~ 0
+power_led
+Text HLabel 9300 2200 1    50   Output ~ 0
+overload_led
+$Comp
+L Device:LED D?
+U 1 1 5C4834BB
+P 10500 2050
+F 0 "D?" H 10492 2173 50  0000 C CNN
+F 1 "LED" H 10492 2264 50  0000 C CNN
+F 2 "" H 10500 2050 50  0001 C CNN
+F 3 "~" H 10500 2050 50  0001 C CNN
+	1    10500 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C4835A2
+P 8100 3200
+F 0 "#PWR?" H 8100 2950 50  0001 C CNN
+F 1 "GNDD" H 8104 3045 50  0000 C CNN
+F 2 "" H 8100 3200 50  0001 C CNN
+F 3 "" H 8100 3200 50  0001 C CNN
+	1    8100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 5C460D36
+P 8000 2900
+F 0 "Q?" H 8191 2946 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 8191 2855 50  0000 L CNN
+F 2 "" H 8200 3000 50  0001 C CNN
+F 3 "~" H 8000 2900 50  0001 C CNN
+	1    8000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C460D8A
+P 7550 2900
+F 0 "R?" V 7343 2900 50  0000 C CNN
+F 1 "10k" V 7434 2900 50  0000 C CNN
+F 2 "" V 7480 2900 50  0001 C CNN
+F 3 "~" H 7550 2900 50  0001 C CNN
+	1    7550 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C46101E
+P 9300 2450
+F 0 "R?" H 9230 2404 50  0000 R CNN
+F 1 "620" H 9230 2495 50  0000 R CNN
+F 2 "" V 9230 2450 50  0001 C CNN
+F 3 "~" H 9300 2450 50  0001 C CNN
+	1    9300 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 5C461025
+P 9200 2900
+F 0 "Q?" H 9391 2946 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 9391 2855 50  0000 L CNN
+F 2 "" H 9400 3000 50  0001 C CNN
+F 3 "~" H 9200 2900 50  0001 C CNN
+	1    9200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C46102C
+P 8750 2900
+F 0 "R?" V 8543 2900 50  0000 C CNN
+F 1 "10k" V 8634 2900 50  0000 C CNN
+F 2 "" V 8680 2900 50  0001 C CNN
+F 3 "~" H 8750 2900 50  0001 C CNN
+	1    8750 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3700 7300 2900
+Wire Wire Line
+	7300 2900 7400 2900
+Wire Wire Line
+	5900 3700 7300 3700
+Wire Wire Line
+	8100 2300 8100 2200
+Wire Wire Line
+	8100 2700 8100 2600
+Wire Wire Line
+	7700 2900 7800 2900
+Wire Wire Line
+	8900 2900 9000 2900
+Wire Wire Line
+	9300 2700 9300 2600
+Wire Wire Line
+	9300 2300 9300 2200
+Wire Wire Line
+	8500 3800 8500 2900
+Wire Wire Line
+	8500 2900 8600 2900
+Wire Wire Line
+	5900 3800 8500 3800
+$Comp
+L Device:R R?
+U 1 1 5C462625
+P 10500 2450
+F 0 "R?" V 10293 2450 50  0000 C CNN
+F 1 "620" V 10384 2450 50  0000 C CNN
+F 2 "" V 10430 2450 50  0001 C CNN
+F 3 "~" H 10500 2450 50  0001 C CNN
+	1    10500 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 5C46262C
+P 10400 2900
+F 0 "Q?" H 10591 2946 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 10591 2855 50  0000 L CNN
+F 2 "" H 10600 3000 50  0001 C CNN
+F 3 "~" H 10400 2900 50  0001 C CNN
+	1    10400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C462633
+P 9950 2900
+F 0 "R?" V 9743 2900 50  0000 C CNN
+F 1 "10k" V 9834 2900 50  0000 C CNN
+F 2 "" V 9880 2900 50  0001 C CNN
+F 3 "~" H 9950 2900 50  0001 C CNN
+	1    9950 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 2900 10200 2900
+Wire Wire Line
+	10500 2700 10500 2600
+Text GLabel 10500 1800 1    50   Input ~ 0
++pdvs
+Wire Wire Line
+	10500 1900 10500 1800
+Wire Wire Line
+	10500 2300 10500 2200
+Wire Wire Line
+	8100 3200 8100 3100
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C46343D
+P 9300 3200
+F 0 "#PWR?" H 9300 2950 50  0001 C CNN
+F 1 "GNDD" H 9304 3045 50  0000 C CNN
+F 2 "" H 9300 3200 50  0001 C CNN
+F 3 "" H 9300 3200 50  0001 C CNN
+	1    9300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C463464
+P 10500 3200
+F 0 "#PWR?" H 10500 2950 50  0001 C CNN
+F 1 "GNDD" H 10504 3045 50  0000 C CNN
+F 2 "" H 10500 3200 50  0001 C CNN
+F 3 "" H 10500 3200 50  0001 C CNN
+	1    10500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3200 9300 3100
+Wire Wire Line
+	10500 3200 10500 3100
+Wire Wire Line
+	9700 3900 9700 2900
+Wire Wire Line
+	9700 2900 9800 2900
+Wire Wire Line
+	5900 3900 8400 3900
+$Comp
+L Device:R R?
+U 1 1 5C4640C2
+P 4000 2850
+F 0 "R?" H 4070 2896 50  0000 L CNN
+F 1 "10k" H 4070 2805 50  0000 L CNN
+F 2 "" V 3930 2850 50  0001 C CNN
+F 3 "~" H 4000 2850 50  0001 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 2600 1    50   Input ~ 0
++pdvs
+Wire Wire Line
+	4000 2700 4000 2600
+Wire Wire Line
+	4000 4100 4300 4100
+Wire Wire Line
+	4000 3000 4000 4100
+Text HLabel 6800 4200 2    50   Input ~ 0
+overload
+Wire Wire Line
+	6800 4100 6700 4100
+Wire Wire Line
+	6800 4200 5900 4200
+$Comp
+L Device:R R?
+U 1 1 5C466052
+P 6550 4100
+F 0 "R?" V 6343 4100 50  0000 C CNN
+F 1 "100k" V 6434 4100 50  0000 C CNN
+F 2 "" V 6480 4100 50  0001 C CNN
+F 3 "~" H 6550 4100 50  0001 C CNN
+	1    6550 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 4100 5900 4100
+Text HLabel 6800 4100 2    50   Input ~ 0
+ac_in
+Wire Wire Line
+	5900 4300 6500 4300
+Text HLabel 6800 4600 2    50   Input ~ 0
+mute_key
+Wire Wire Line
+	6800 4600 6700 4600
+$Comp
+L Device:R R?
+U 1 1 5C467833
+P 6700 4850
+F 0 "R?" H 6770 4896 50  0000 L CNN
+F 1 "10k" H 6770 4805 50  0000 L CNN
+F 2 "" V 6630 4850 50  0001 C CNN
+F 3 "~" H 6700 4850 50  0001 C CNN
+	1    6700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5000 6700 5200
+Wire Wire Line
+	6700 4700 6700 4600
+Wire Wire Line
+	6500 4300 6500 4700
+Connection ~ 6700 4600
+Wire Wire Line
+	6700 4600 5900 4600
+$Comp
+L Device:R R?
+U 1 1 5C468B45
+P 6500 4850
+F 0 "R?" H 6570 4896 50  0000 L CNN
+F 1 "10k" H 6570 4805 50  0000 L CNN
+F 2 "" V 6430 4850 50  0001 C CNN
+F 3 "~" H 6500 4850 50  0001 C CNN
+	1    6500 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5000 6500 5200
+Wire Wire Line
+	8500 3800 8500 4100
+Wire Wire Line
+	8500 4100 8800 4100
+Connection ~ 8500 3800
+Text HLabel 8800 4100 2    50   BiDi ~ 0
+icspclk
+Text HLabel 8800 4200 2    50   BiDi ~ 0
+icspdat
+Wire Wire Line
+	8800 4200 8400 4200
+Wire Wire Line
+	8400 4200 8400 3900
+Connection ~ 8400 3900
+Wire Wire Line
+	8400 3900 9700 3900
+Wire Wire Line
+	5900 4700 6200 4700
+Wire Wire Line
+	5900 4800 6100 4800
+Text Notes 5600 2100 0    50   ~ 0
+The key "power" is tied on Vdd to \nsignal the FW boot to take instant \non action.
+Text HLabel 6200 6200 3    50   Input ~ 0
+uart_rx
+Text HLabel 6100 6200 3    50   Output ~ 0
+uart_tx
+Wire Wire Line
+	6200 4700 6200 6200
+Wire Wire Line
+	6100 4800 6100 6200
+Wire Wire Line
+	5900 4500 7300 4500
+Wire Wire Line
+	7300 4500 7300 5100
+Text HLabel 7300 6200 3    50   BiDi ~ 0
+i2c_sda
+Text HLabel 7400 6200 3    50   BiDi ~ 0
+i2c_scl
+Wire Wire Line
+	7400 6200 7400 5200
+Wire Wire Line
+	7400 4400 5900 4400
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C475E16
+P 6500 5200
+F 0 "#PWR?" H 6500 4950 50  0001 C CNN
+F 1 "GNDD" H 6504 5045 50  0000 C CNN
+F 2 "" H 6500 5200 50  0001 C CNN
+F 3 "" H 6500 5200 50  0001 C CNN
+	1    6500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C476CD2
+P 6700 5200
+F 0 "#PWR?" H 6700 4950 50  0001 C CNN
+F 1 "GNDD" H 6704 5045 50  0000 C CNN
+F 2 "" H 6700 5200 50  0001 C CNN
+F 3 "" H 6700 5200 50  0001 C CNN
+	1    6700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C477BD2
+P 7700 4850
+F 0 "R?" H 7770 4896 50  0000 L CNN
+F 1 "2k4" H 7770 4805 50  0000 L CNN
+F 2 "" V 7630 4850 50  0001 C CNN
+F 3 "~" H 7700 4850 50  0001 C CNN
+	1    7700 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 4600 1    50   Input ~ 0
++pdvs
+Wire Wire Line
+	7700 4600 7700 4700
+Wire Wire Line
+	7700 5000 7700 5100
+Wire Wire Line
+	7700 5100 7300 5100
+Connection ~ 7300 5100
+Wire Wire Line
+	7300 5100 7300 6200
+$Comp
+L Device:R R?
+U 1 1 5C479B8C
+P 8000 4850
+F 0 "R?" H 8070 4896 50  0000 L CNN
+F 1 "2k4" H 8070 4805 50  0000 L CNN
+F 2 "" V 7930 4850 50  0001 C CNN
+F 3 "~" H 8000 4850 50  0001 C CNN
+	1    8000 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 8000 4600 1    50   Input ~ 0
++pdvs
+Wire Wire Line
+	8000 4600 8000 4700
+Wire Wire Line
+	8000 5000 8000 5200
+Wire Wire Line
+	8000 5200 7400 5200
+Connection ~ 7400 5200
+Wire Wire Line
+	7400 5200 7400 4400
+$EndSCHEMATC
