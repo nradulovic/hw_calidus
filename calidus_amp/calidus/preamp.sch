@@ -134,9 +134,11 @@ U 1 1 5C4758D5
 P 4000 2500
 F 0 "C45" V 3655 2500 50  0000 C CNN
 F 1 "4u7" V 3746 2500 50  0000 C CNN
-F 2 "" H 4038 2350 50  0001 C CNN
-F 3 "~" H 4000 2500 50  0001 C CNN
-F 4 "35V" V 3837 2500 50  0000 C CNN "Voltage"
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4038 2350 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4000 2500 50  0001 C CNN
+F 4 "50V" V 3837 2500 50  0000 C CNN "Voltage"
+F 5 "Rybicon:50YXF4R7MEFC5X11" V 4000 2500 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:2811491" V 4000 2500 50  0001 C CNN "Supplier1"
 	1    4000 2500
 	0    1    1    0   
 $EndComp
@@ -300,18 +302,6 @@ F 5 "MF" H 4230 4286 50  0000 R CNN "Type"
 $EndComp
 Wire Wire Line
 	4300 4300 4300 5300
-$Comp
-L Device:CP C56
-U 1 1 5C4215F5
-P 4000 5300
-F 0 "C56" V 4163 5300 50  0000 C CNN
-F 1 "4u7" V 4254 5300 50  0000 C CNN
-F 2 "" H 4038 5150 50  0001 C CNN
-F 3 "~" H 4000 5300 50  0001 C CNN
-F 4 "35V" V 4345 5300 50  0000 C CNN "Voltage"
-	1    4000 5300
-	0    1    1    0   
-$EndComp
 Text HLabel 7100 5200 2    50   Output ~ 0
 potin_r
 Text HLabel 7100 5000 2    50   Input ~ 0
@@ -341,30 +331,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 5200 6200 5200
 $Comp
-L Device:CP C55
-U 1 1 5C435076
-P 6350 5200
-F 0 "C55" V 6513 5200 50  0000 C CNN
-F 1 "47u" V 6604 5200 50  0000 C CNN
-F 2 "" H 6388 5050 50  0001 C CNN
-F 3 "~" H 6350 5200 50  0001 C CNN
-F 4 "35V" V 6695 5200 50  0000 C CNN "Voltage"
-	1    6350 5200
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:CP C46
-U 1 1 5C42D4B4
-P 6350 2600
-F 0 "C46" V 6005 2600 50  0000 C CNN
-F 1 "47u" V 6096 2600 50  0000 C CNN
-F 2 "" H 6388 2450 50  0001 C CNN
-F 3 "~" H 6350 2600 50  0001 C CNN
-F 4 "35V" V 6187 2600 50  0000 C CNN "Voltage"
-	1    6350 2600
-	0    -1   1    0   
-$EndComp
-$Comp
 L Amplifier_Operational:OPA2134 U8
 U 1 1 5C47C2F3
 P 5600 2600
@@ -389,12 +355,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:OPA2134 U8
 U 3 1 5C47C4ED
-P 9000 2400
-F 0 "U8" H 8958 2446 50  0000 L CNN
-F 1 "OPA2134" H 8958 2355 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 9000 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 9000 2400 50  0001 C CNN
-	3    9000 2400
+P 8700 2400
+F 0 "U8" H 8658 2446 50  0000 L CNN
+F 1 "OPA2134" H 8658 2355 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8700 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 8700 2400 50  0001 C CNN
+	3    8700 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -587,14 +553,14 @@ F 5 "MF" H 3630 4286 50  0000 R CNN "Type"
 $EndComp
 Wire Wire Line
 	3700 4300 3700 5300
-Text GLabel 8900 1800 1    50   Input ~ 0
+Text GLabel 8600 1800 1    50   Input ~ 0
 +pvs
-Text GLabel 8900 3000 3    50   Input ~ 0
+Text GLabel 8600 3000 3    50   Input ~ 0
 -pvs
 Wire Wire Line
-	8900 2100 8900 1900
+	8600 2100 8600 1900
 Wire Wire Line
-	8900 3000 8900 2900
+	8600 3000 8600 2900
 $Comp
 L power:GNDPWR #PWR030
 U 1 1 5C562256
@@ -607,11 +573,11 @@ F 3 "" H 9900 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8900 2900 9200 2900
+	8600 2900 9200 2900
 Wire Wire Line
 	9200 2900 9200 2800
 Wire Wire Line
-	8900 1900 9200 1900
+	8600 1900 9200 1900
 Wire Wire Line
 	9200 1900 9200 2000
 $Comp
@@ -646,12 +612,12 @@ F 5 "PP" H 9315 2014 50  0000 L CNN "Type"
 $EndComp
 Wire Wire Line
 	9200 2300 9200 2400
-Connection ~ 8900 1900
+Connection ~ 8600 1900
 Wire Wire Line
-	8900 1900 8900 1800
-Connection ~ 8900 2900
+	8600 1900 8600 1800
+Connection ~ 8600 2900
 Wire Wire Line
-	8900 2900 8900 2700
+	8600 2900 8600 2700
 Wire Wire Line
 	9900 2400 9800 2400
 Connection ~ 9200 2400
@@ -670,32 +636,88 @@ Wire Wire Line
 Wire Wire Line
 	9800 2900 9200 2900
 Connection ~ 9200 2900
+Wire Wire Line
+	9800 2300 9800 2400
+Wire Wire Line
+	9800 2800 9800 2900
+Text Notes 8900 1600 0    50   ~ 0
+Place the capacitors as\nclose as possible to IC\npins
 $Comp
-L Device:CP C44
-U 1 1 5C577B9E
+L Device:CP C?
+U 1 1 5C5A5B6F
 P 9800 2150
-F 0 "C44" H 9682 2241 50  0000 R CNN
+AR Path="/5C37BC48/5C5A5B6F" Ref="C?"  Part="1" 
+AR Path="/5C4751C0/5C5A5B6F" Ref="C?"  Part="1" 
+F 0 "C?" H 9682 2241 50  0000 R CNN
 F 1 "10u" H 9682 2150 50  0000 R CNN
-F 2 "" H 9838 2000 50  0001 C CNN
-F 3 "~" H 9800 2150 50  0001 C CNN
-F 4 "35V" H 9682 2059 50  0000 R CNN "Voltage"
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 9838 2000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 9800 2150 50  0001 C CNN
+F 4 "50V" H 9682 2059 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF10MEFC5X11" H 9800 2150 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144632" H 9800 2150 50  0001 C CNN "Supplier1"
 	1    9800 2150
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9800 2300 9800 2400
 $Comp
-L Device:CP C48
-U 1 1 5C577EB0
+L Device:CP C?
+U 1 1 5C5A7F98
 P 9800 2650
-F 0 "C48" H 9682 2741 50  0000 R CNN
+AR Path="/5C37BC48/5C5A7F98" Ref="C?"  Part="1" 
+AR Path="/5C4751C0/5C5A7F98" Ref="C?"  Part="1" 
+F 0 "C?" H 9682 2741 50  0000 R CNN
 F 1 "10u" H 9682 2650 50  0000 R CNN
-F 2 "" H 9838 2500 50  0001 C CNN
-F 3 "~" H 9800 2650 50  0001 C CNN
-F 4 "35V" H 9682 2559 50  0000 R CNN "Voltage"
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 9838 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 9800 2650 50  0001 C CNN
+F 4 "50V" H 9682 2559 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF10MEFC5X11" H 9800 2650 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144632" H 9800 2650 50  0001 C CNN "Supplier1"
 	1    9800 2650
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9800 2800 9800 2900
+$Comp
+L Device:CP C?
+U 1 1 5C5AD364
+P 4000 5300
+F 0 "C?" V 3655 5300 50  0000 C CNN
+F 1 "4u7" V 3746 5300 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4038 5150 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4000 5300 50  0001 C CNN
+F 4 "50V" V 3837 5300 50  0000 C CNN "Voltage"
+F 5 "Rybicon:50YXF4R7MEFC5X11" V 4000 5300 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:2811491" V 4000 5300 50  0001 C CNN "Supplier1"
+	1    4000 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C5B02C7
+P 6350 2600
+AR Path="/5C37BC7C/5C5B02C7" Ref="C?"  Part="1" 
+AR Path="/5C4751C0/5C5B02C7" Ref="C?"  Part="1" 
+F 0 "C?" V 6005 2600 50  0000 C CNN
+F 1 "47u" V 6096 2600 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6388 2450 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 6350 2600 50  0001 C CNN
+F 4 "35V" V 6187 2600 50  0000 C CNN "Voltage"
+F 5 "Rybicon:35YXF47MEFC6.3X11" H 6350 2600 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144626" H 6350 2600 50  0001 C CNN "Supplier1"
+	1    6350 2600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C5B28EB
+P 6350 5200
+AR Path="/5C37BC7C/5C5B28EB" Ref="C?"  Part="1" 
+AR Path="/5C4751C0/5C5B28EB" Ref="C?"  Part="1" 
+F 0 "C?" V 6005 5200 50  0000 C CNN
+F 1 "47u" V 6096 5200 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6388 5050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 6350 5200 50  0001 C CNN
+F 4 "35V" V 6187 5200 50  0000 C CNN "Voltage"
+F 5 "Rybicon:35YXF47MEFC6.3X11" H 6350 5200 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144626" H 6350 5200 50  0001 C CNN "Supplier1"
+	1    6350 5200
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

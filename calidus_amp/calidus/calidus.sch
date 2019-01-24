@@ -435,4 +435,73 @@ Wire Wire Line
 Wire Wire Line
 	4700 5100 4700 3900
 Connection ~ 4700 3900
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5C57F80E
+P 2900 7100
+F 0 "#LOGO1" H 2900 7375 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2900 6875 50  0001 C CNN
+F 2 "" H 2900 7100 50  0001 C CNN
+F 3 "~" H 2900 7100 50  0001 C CNN
+	1    2900 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5C57F9BC
+P 1200 6900
+F 0 "H1" H 1300 6951 50  0000 L CNN
+F 1 "Mounting" H 1300 6860 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1200 6900 50  0001 C CNN
+F 3 "~" H 1200 6900 50  0001 C CNN
+	1    1200 6900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 7000
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5C581F06
+P 1200 7200
+F 0 "H3" H 1300 7251 50  0000 L CNN
+F 1 "Mounting" H 1300 7160 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1200 7200 50  0001 C CNN
+F 3 "~" H 1200 7200 50  0001 C CNN
+	1    1200 7200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 7300
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5C5841CE
+P 1800 6900
+F 0 "H2" H 1900 6951 50  0000 L CNN
+F 1 "Mounting" H 1900 6860 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1800 6900 50  0001 C CNN
+F 3 "~" H 1800 6900 50  0001 C CNN
+	1    1800 6900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 7000
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5C5841D6
+P 1800 7200
+F 0 "H4" H 1900 7251 50  0000 L CNN
+F 1 "Mounting" H 1900 7160 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1800 7200 50  0001 C CNN
+F 3 "~" H 1800 7200 50  0001 C CNN
+	1    1800 7200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 7300
+Wire Notes Line
+	1000 6600 3200 6600
+Wire Notes Line
+	3200 6600 3200 7600
+Wire Notes Line
+	3200 7600 1000 7600
+Wire Notes Line
+	1000 7600 1000 6600
+Text Notes 1100 7500 0    50   ~ 0
+Mechanical elements
 $EndSCHEMATC

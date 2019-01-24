@@ -5,14 +5,20 @@
 Introduction
 ============
 
-This document shall describe procedures to build audio power amplifier using
-LM1875 or LM3886 integrated circuits.
+This document shall describe rationales used to design and build audio 
+power amplifier using TDA7293 integrated circuit.
 
 Architecture
 ============
 
-Low power sections:
-High power sections:
+The amplifier architecture consists of the following sections:
+
+* Input circuit
+* Power amplifier
+* Power supply
+* Control and Monitoring Unit (CMU)
+
+All sections are located on a single PCB.
 
 Input circuit
 =============
@@ -50,19 +56,8 @@ Input low-pass filter
 
 URL: http://www.johnhearfield.com/RC/RC4.htm
 
-
-Differential buffer
--------------------
-
-__NOTE__:
-
- This buffer is needed in case parallel output amplifiers are used.
-
-The buffer consists of a PNP transistor, a 100ohm resistor and a CCS of 20mA. 
-The resistor is connected between transistor BE pins. This way it is 
-bootstrapped by the transistor Vbe voltage which gives about 6mA constant 
-current flowing into OPAMP output. This technique is used to improve OPAMP 
-output stage linearity.
+Low frequency signal shaping
+----------------------------
 
 Power amplifier
 ===============
@@ -101,7 +96,7 @@ The output circuit is the following::
                    +++
 
 The output coil Ld provides high frequency isolation of output load from output
-stage in LM3886. The inductance value should be between 2.2uH up to 3.3uH. 
+stage in TDA7293. The inductance value should be between 2.2uH up to 3.3uH. 
 Output shunt resistor should be between 2.2 Ohm and 4.7 Ohm. See 
 *Douglas Self - Audio Power Amplifier Design Handbook, 3rd Ed., Output networks, chapter 7* 
 for effect on power amplifier transfer function.
@@ -109,77 +104,43 @@ for effect on power amplifier transfer function.
 Paralleling multiple modules
 ----------------------------
 
-Ballast resistor
-````````````````
-
-Each amplifier will connect to output bus via ballast resistor. The ballast
-resistor is made of three 1 Ohm resistors wired in parallel, which gives 
-``Rb=0.33 Ohm``.Maximum output current of the power amplifier is:
-
-.. math::
-
-    Io(max)=Uo(max)/Zload(min)
-    
-With Uo(max) approx 30V and Zload(min) equal to 2 Ohms we get:
-
-.. math::
-    
-    Io(max)=15A
-
-This current is divided by the number of modules in the amplifier, given by the
-variable ``N=3``. Maximum power dissipation in ballast resistor is therefore:
-
-.. math::
-
-    Pbdiss(max)=((Io(max)/N)**2*Rb)/3=2.75W
-    
-Resistors with power dissipation of 3 Watts is a good and very conservative
-choice.
-
 Power dissipation
------------------
+`````````````````
 
 NOTE:
 
-* Try to keep power dissipation to around 40W per IC package. (from PDF
-  document *AN-1192 Overture Series High Power Solutions*) for LM3886.
-* Maximum power dissipation should be around 25W per IC package for LM1875.
+* Try to keep power dissipation to around 40W per IC package.
 
 Fortunately, with music signals the power dissipation should be lower. 
 Effective power of music signal is about 2 to 10 times as smaller than 
 effective power of sinusoid signal. The power transformer is 200VA, meaning 
-that each channel gets 100VA of power. Since the maximum output power at 8ohms 
-is approximately 50W we get that the transformer supports crest factor of 4 
-(see: 
-*https://www.neurochrome.com/taming-the-lm3886-chip-amplifier/power-supply-design*).
-
-This means that effective output power is around ``50W/4 = 12.5W``.
+that each channel gets 100VA of power. 
 
 Maximum voltages at:
- * Maximum ``Pdiss=50W`` for LM3886, and ``Pdiss=30W`` for LM1875.
+ * Maximum ``Pdiss=50W`` for TDA7293, and ``Pdiss=30W`` for LM1875.
  * Load phase is ``LoadPHI=60degrees``.
  * Including quiescent current dissipation.
  * Case temperature is 60C degrees.
  * Taking into account OPS SOA.
 
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| Zload [ohm] | Vsupply [V] | Vdrop [V] | Pdiss [W]    | Vsupply [V] | Vdrop [V] | Pdiss [W]    |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| Chip        |                LM3886                  |                LM1875                  |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| 16          | 33          | 2.2       | 31.4         | 26          | 2.2       | 19.1         |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| 12          | 29          | 2.3       | 31.6         | 24          | 2.6       | 21.1         |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| 8           | 25          | 2.5       | 34.2         | 23          | 4.4       | 26.8         |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| 6           | 22          | 2.6       | 34.7         | 21          | 4.6       | 28.9         |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
-| 4           | 19          | 2.9       | 37.4         | 16          | 5.2       | 22.6         |
-+-------------+-------------+-----------+--------------+-------------+-----------+--------------+
++-------------+-------------+-----------+--------------+
+| Zload [ohm] | Vsupply [V] | Vdrop [V] | Pdiss [W]    |
++-------------+-------------+-----------+--------------+
+| Chip        |                TDA7293                  |
++-------------+-------------+-----------+--------------+
+| 16          | 33          | 2.2       | 31.4         |
++-------------+-------------+-----------+--------------+
+| 12          | 29          | 2.3       | 31.6         |
++-------------+-------------+-----------+--------------+
+| 8           | 25          | 2.5       | 34.2         |
++-------------+-------------+-----------+--------------+
+| 6           | 22          | 2.6       | 34.7         |
++-------------+-------------+-----------+--------------+
+| 4           | 19          | 2.9       | 37.4         |
++-------------+-------------+-----------+--------------+
 
 This table tells us that if we want to drive 4ohm load at 33V we need 4 pieces
-of LM3886 in parallel. This is quite a number of ICs, but fortunately, the
+of TDA7293 in parallel. This is quite a number of ICs, but fortunately, the
 table presumes that the power supply can produce constant 33V at continuous
 load and the signal is sinusoid. This is not the case with unregulated power
 supply and music signals. We have to take into account how much energy is
@@ -187,7 +148,7 @@ stored in power supply capacitors and how much will the transformer voltages
 sag under these conditions and that music signal has much lower effective power
 comparing to instantaneous power.
 
-Transformer specification for LM3886 amplifier is the following:
+Transformer specification for TDA7293 amplifier is the following:
  * ``S=200VA``, power rating.
  * ``Usn1=24Veff``, first secondary nominal voltage.
  * ``Usn2=24Veff``, second secondary nominal voltage.
@@ -230,6 +191,9 @@ Using low feedback gain is preferred for several reasons:
  * there is more loop gain available to reduce the distortion
  * reduced outout noues
  * lower offset at output
+
+Inverting configuration
+```````````````````````
 
 Nominal gain is:
 
@@ -294,119 +258,12 @@ Chosen values when using parallel E48 series (two resistor):
  * Rf = 16.2kOhm
  * Rg = 1kOhm
 
-
-Gain errors
------------
-
-Nominal absolute gain is:
-
-.. math::
-
-    G=Rf/Rg
-
-Where ``Rf`` is the resistor towards output and ``Rg`` is the resistor towards
-signal source. We are using absolute gain here since it's more natural to work
-with positive numbers. The resistor tolerance is 0.1%. Maximum value for gain
-due to resistor tolerances in this case is:
-
-.. math::
-
-    G(max)=Rf(max)/Rg(min)
-
-    G(max)=(Rf*(1+pp))/(Rg*(1-pp))=G*(1+pp)/(1-pp)
-
-Minimum gain is:
-
-.. math::
-
-    G(min)=Rf(min)/Rg(max)
-
-    G(min)=(Rf*(1-pp))/(Rg*(1+pp))=G*(1-pp)/(1+pp)
-
-Maximum voltage difference by resistor tolerances can be calculated by:
-
-.. math::
-
-    Uin=Uout(max)/G
-
-    Urdiff(max)=G(max)*Uin-G(min)*Uin=Uin*(G(max)-G(min))
-
-    Urdiff(max)=(Uout(max)/G)*(G(max)-G(min))
-
-This approximates to: 
-
-.. math::
-
-    Udiff(max)=Uout(max)*4*pp
-
-For 0.1% the pp is 0.001, so if ``pp=0.001`` and ``uout(max) = 30V``, we get:
-
-.. math::
-
-    Urdiff(max) = 120mV
-
-Maximum voltage difference due to different open loop gains can be calculated,
-too:
-
-.. math::
-
-    Eadiff(max)=uout(max)/A(min)
-
-Typical open loop gain in the data-sheet is 115dB. Minimum open loop gain is
-90dB. This calculates to the difference of input voltage, 90dB is approx.
-30.000:
-
-.. math::
-
-    Eadiff(max)=30/30000=1mV
-
-This calculates to:
-
-.. math::
-
-    Uadiff(max)=Eadiff(max)*g=30mV
-
-Total max difference voltage is sum of voltages created from resistor
-tolerances and a voltage from open loop gain deficiency:
-
-.. math::
-
-    Udiff(max)=Urdiff(max)+Uadiff(max)=120+30=150mV
-
-For this part of circuit there is no advantage of using multiple resistors
-(parallel or series) to get the desired resistance but lower the tolerance.
-The reason the tolerances do not decrease when using multiple resistors is
-because of the involved manufacturing process. Using multiple resistors is
-OK only in situation when wanting bigger power dissipation ability or to get
-a specific non E24 resistance.
-
-The equivalent resistance of the loop gain circuitry must be below 600ohms.
-
-The LM3886 shall be in differential connection. The lower arm of the gain loop
-circuitry shall use 500ohm resistor. Using 220uF we get 1.44Hz lower corner
-frequency. Also, the signal is applied to inverting input. See Bob Cordell
-super gain clone ``.ppt``.
-
 Frequency compensation
 ----------------------
 
-The LM1875/LM3886 are modeled in the following way:
- * ``Aol``, typical open loop gain at DC.
- * ``Fp1``, dominant pole.
- * ``Fp2``, a pole which probably originates from output stage.
- * ``Fp3``, pole which probably originates from input or intermediate stages.
- * ``Fp4 Hz``, pole which probably originates from input or intermediate stages.
- * ``Rops``, open loop output stage impedance. The OPS open loop impedance is 
-   unusually low because the LM3886 uses output inclusive Miller compensation
-   which can be observed on the equivalent schematic in the data-sheet.
-
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-| Chip      | Aol [dB]  | Fp1 [Hz]  | Fp2 [Hz]  | Fp3 [Hz]  | Fp4 [Hz]  | Rops [Ohm]|
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-| LM1875    | 90        | 15        | 1.5e6     | 8e6       | 9e6       | 500e-3    |
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-| LM3886    | 115       | 15        | 1.7e6     | 9e6       | 10e6      | 240e-3    |
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+The TDA7293 data-sheet does not provide enough of relevant data in order to 
+model the IC in AC domain. Since we can't model it there are no optimizations
+available for the negative feedback circuit.
 
 Lead compensation
 `````````````````
@@ -460,37 +317,7 @@ Where:
 
     Re=Rf||Rg=Rf*Rg/(Rf+Rg)
 
-With this compensation we want to compensate for LM3886 ``fp2`` pole. Although
-the ``fp2`` pole has a high value of it still has quite the effect on the gain 
-phase near unity gain bandwidth (UGBW) value. To compensate for ``fp2``
-pole we can use ``wz`` equation above. 
 
-For LM1875 we would get:
-
-.. math::
-    
-    Rf = 8.2kOhm
-    
-    fp2 = 1.5e6 Hz
-    
-    Cl=1/(2*pi*Rf*fp2)=12.9pF
-    
-For LM3886 we would get:
-
-.. math::
-    
-    Rf = 8.2kOhm
-    
-    fp2 = 1.7e6 Hz
-    
-    Cl=1/(2*pi*Rf*fp2)=11.4pF
-
-Outcome:
- * By using this compensation we improve the loop gain phase around UGBW point
-   and at higher frequencies.
- * The ``Cf`` in this compensation is known to reduce the closed loop
-   bandwidth. Since the ``Cf`` value is so small the impact to closed loop
-   bandwidth should be minimal.
 
 Input pin capacitance compensation
 ``````````````````````````````````
@@ -500,7 +327,7 @@ Input pins have the following parasitic capacitances associated:
  * Cm
  * Cstray
  
-The LM1875/LM3886 datasheets do not specify any parameter regarding parasitic
+The TDA7293 data-sheet does not specify any parameter regarding parasitic
 input capacitances. We can use a rough estimation of values based on experience
 on using other audio BJT OPAMPS, and typical values are 2pF for all 3
 parameters. In inverting configurations with `+` input grounded all three
@@ -515,55 +342,32 @@ resistor. To compensate for this the following equation is applied:
 
 .. math::
 
-    Rf*Csi=Rg*Cinput
+    Rf*Cf=Rg*Cinput
     
-    Csi=Cinput*Rg/Rf=0.4pF
-    
-Since we are already using lead compensation we just add this value to existing
-`Cl` capacitor.
-
-Also, note that LM1875/LM3886 model has tree more additional poles: 
- * ``Fp2``, pole which probably originates from input or intermediate 
-   stages.
- * ``Fp3``, pole which probably originates from input or intermediate 
-   stages.
- * A pole from ``Rops``, open loop output stage impedance which in conjunction 
-   with output Zobel and connected load forms another high frequency pole.
-   
-Although all above poles are very high in frequency they still have their
-impact on lower frequency part of transfer function and reduce a few degrees of
-phase margin at UGBW point (approx. at 500kHz). Because of these poles we can
-freely put a bit bigger `Cf` capacitor value in the feedback network. Rough
-estimation is to put additional 1-2pF.
-
-For LM1875 we get:
+    Cf=Cinput*Rg/Rf=0.25pF
+        
+Since the capacitance is on the border of practicallity we choose:
 
 .. math::
 
-    Cf=Cl+Csi=12.9+0.4+2pF=15.3pF
+    Cf=3.3pF
     
-Since the closest, standard values of capacitors are 15pF and 18pF, we choose
-the 18pF as the final value for `Cl` capacitor:
-
-.. math::
-
-    Cf=18pF 
-    
-For LM3886 we get:
-
-.. math::
-
-    Cf=Cl+Csi=11.4+0.4+2pF=13.8pF
-    
-Since the closest, standard values of capacitors are 12pF and 15pF, we choose
-the 15pF as the final value for `Cl` capacitor:
-
-.. math::
-
-    Cf=15pF 
 
 Power supply
 ============
+
+Power amplifier
+```````````````
+
+We are using dual symmetrical supplies from since dual secondaries. The high
+voltage supplies are stabilized using LM317/LM337 regulators and are used to
+feed input sections of TDA7293. 
+
+The low voltage supplies are supplied directly from reservour capacitors. This
+supply powers the high current, high power output sections of TDA7293.
+
+By using dual and independent supplies for input sections and power sections we
+can achieve very good PSRR results.
 
 Before rectifier diodes a snubber RC circuit should be placed to decrease diode
 switching impulse. Recommended values are ``Rsn = 1 Ohm``, ``Csn = 470nF``::
@@ -584,18 +388,16 @@ switching impulse. Recommended values are ``Rsn = 1 Ohm``, ``Csn = 470nF``::
 
 This snubber may be placed near the IC power supply lines, too.
 
-Using stabilized power supplies, for example by using LT1083 regulator is only
-meaningful at lower output powers. The regulation becomes really expensive when
-used in high power amplifiers. Regulated power supplies are OK when used up to
-powers of 20W-30W @ 8 Ohm.
+AC mains
+````````
 
 NOTE:
  * On case chassis there should be a safety ground screw just near at the input
    220V socket.
 
 
-Amplifier controller
-====================
+Control and Monitoring Unit
+===========================
 
 Amplifier controller will control and monitor two amplifiers. It has the
 following components:
@@ -709,7 +511,7 @@ One possibility is to have:
 This combination has Gain = 22
 
 Monitor MCU pins
-================
+----------------
 
 
 +-----------------------+---------------+-----------+-----------+---------------------------------------------------+
@@ -788,7 +590,7 @@ Monitor MCU pins
 
 
 Hardware configurations
-=======================
+-----------------------
 
 Power control mode
 
@@ -812,7 +614,7 @@ Sensors mode:
     
 
 Software configurations
-=======================
+-----------------------
 
 Power supply:
 
