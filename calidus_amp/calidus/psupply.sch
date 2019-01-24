@@ -1096,10 +1096,10 @@ F 7 "Farnell:2943922" H 2300 3450 50  0001 C CNN "Supplier"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C15
 U 1 1 5C5979FA
 P 2100 6850
-F 0 "C?" H 1982 6941 50  0000 R CNN
+F 0 "C15" H 1982 6941 50  0000 R CNN
 F 1 "10u" H 1982 6850 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2138 6700 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 2100 6850 50  0001 C CNN
@@ -1110,10 +1110,10 @@ F 6 "Farnell:1144632" H 2100 6850 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C12
 U 1 1 5C5A56EF
 P 3300 6350
-F 0 "C?" H 3182 6441 50  0000 R CNN
+F 0 "C12" H 3182 6441 50  0000 R CNN
 F 1 "10u" H 3182 6350 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3338 6200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 3300 6350 50  0001 C CNN
@@ -1124,10 +1124,10 @@ F 6 "Farnell:1144632" H 3300 6350 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C16
 U 1 1 5C5A577F
 P 3300 6850
-F 0 "C?" H 3182 6941 50  0000 R CNN
+F 0 "C16" H 3182 6941 50  0000 R CNN
 F 1 "10u" H 3182 6850 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3338 6700 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 3300 6850 50  0001 C CNN
@@ -1138,10 +1138,10 @@ F 6 "Farnell:1144632" H 3300 6850 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C13
 U 1 1 5C5A5803
 P 4900 6350
-F 0 "C?" H 4782 6441 50  0000 R CNN
+F 0 "C13" H 4782 6441 50  0000 R CNN
 F 1 "10u" H 4782 6350 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4938 6200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 4900 6350 50  0001 C CNN
@@ -1152,10 +1152,10 @@ F 6 "Farnell:1144632" H 4900 6350 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C14
 U 1 1 5C5A58A1
 P 6100 6350
-F 0 "C?" H 5982 6441 50  0000 R CNN
+F 0 "C14" H 5982 6441 50  0000 R CNN
 F 1 "10u" H 5982 6350 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6138 6200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 6100 6350 50  0001 C CNN
@@ -1166,10 +1166,10 @@ F 6 "Farnell:1144632" H 6100 6350 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C8
 U 1 1 5C5B32B4
 P 7600 3050
-F 0 "C?" H 7482 3141 50  0000 R CNN
+F 0 "C8" H 7482 3141 50  0000 R CNN
 F 1 "47u" H 7482 3050 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7638 2900 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 7600 3050 50  0001 C CNN
@@ -1180,10 +1180,10 @@ F 6 "Farnell:1144641" H 7600 3050 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C4
 U 1 1 5C5DD036
 P 5500 2550
-F 0 "C?" H 5382 2641 50  0000 R CNN
+F 0 "C4" H 5382 2641 50  0000 R CNN
 F 1 "470u" H 5382 2550 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 5538 2400 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 5500 2550 50  0001 C CNN
@@ -1194,10 +1194,10 @@ F 6 "Farnell:1144639" V 5500 2550 50  0001 C CNN "Supplier"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C7
 U 1 1 5C5E3E3F
 P 5500 3050
-F 0 "C?" H 5382 3141 50  0000 R CNN
+F 0 "C7" H 5382 3141 50  0000 R CNN
 F 1 "470u" H 5382 3050 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 5538 2900 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 5500 3050 50  0001 C CNN
@@ -1208,10 +1208,10 @@ F 6 "Farnell:1144639" V 5500 3050 50  0001 C CNN "Supplier"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C10
 U 1 1 5C5E3ED1
 P 4600 4100
-F 0 "C?" V 4250 4100 50  0000 C CNN
+F 0 "C10" V 4250 4100 50  0000 C CNN
 F 1 "470u" V 4350 4100 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 4638 3950 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4600 4100 50  0001 C CNN

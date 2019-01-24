@@ -1170,10 +1170,10 @@ Place the capacitors as\nclose as possible to IC\npins
 Text Notes 9600 2600 0    50   ~ 0
 Place the capacitors as\nclose as possible to IC\npins
 $Comp
-L Device:CP C?
+L Device:CP C37
 U 1 1 5C5AF4B7
 P 4100 5350
-F 0 "C?" H 3982 5259 50  0000 R CNN
+F 0 "C37" H 3982 5259 50  0000 R CNN
 F 1 "47u" H 3982 5350 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4138 5200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4100 5350 50  0001 C CNN
@@ -1188,8 +1188,8 @@ L Device:CP C?
 U 1 1 5C5B3FFC
 P 10500 3150
 AR Path="/5C37BC48/5C5B3FFC" Ref="C?"  Part="1" 
-AR Path="/5C37BC7C/5C5B3FFC" Ref="C?"  Part="1" 
-F 0 "C?" H 10382 3241 50  0000 R CNN
+AR Path="/5C37BC7C/5C5B3FFC" Ref="C30"  Part="1" 
+F 0 "C30" H 10382 3241 50  0000 R CNN
 F 1 "47u" H 10382 3150 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10538 3000 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 10500 3150 50  0001 C CNN
@@ -1204,8 +1204,8 @@ L Device:CP C?
 U 1 1 5C5CD581
 P 10500 3650
 AR Path="/5C37BC48/5C5CD581" Ref="C?"  Part="1" 
-AR Path="/5C37BC7C/5C5CD581" Ref="C?"  Part="1" 
-F 0 "C?" H 10382 3741 50  0000 R CNN
+AR Path="/5C37BC7C/5C5CD581" Ref="C34"  Part="1" 
+F 0 "C34" H 10382 3741 50  0000 R CNN
 F 1 "47u" H 10382 3650 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10538 3500 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 10500 3650 50  0001 C CNN
@@ -1216,10 +1216,10 @@ F 6 "Farnell:1144641" H 10500 3650 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C27
 U 1 1 5C5E5E74
 P 2250 2600
-F 0 "C?" V 2413 2600 50  0000 C CNN
+F 0 "C27" V 2413 2600 50  0000 C CNN
 F 1 "220u" V 2504 2600 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 2450 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 2600 50  0001 C CNN
@@ -1230,10 +1230,10 @@ F 6 "Farnel:1144628" V 2250 2600 50  0001 C CNN "Supplier1"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C38
 U 1 1 5C5E631C
 P 2250 5800
-F 0 "C?" V 1905 5800 50  0000 C CNN
+F 0 "C38" V 1905 5800 50  0000 C CNN
 F 1 "220u" V 1996 5800 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 5650 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 5800 50  0001 C CNN
@@ -1244,10 +1244,10 @@ F 6 "Farnel:1144628" V 2250 5800 50  0001 C CNN "Supplier1"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C39
 U 1 1 5C5E6449
 P 2250 6000
-F 0 "C?" V 2413 6000 50  0000 C CNN
+F 0 "C39" V 2413 6000 50  0000 C CNN
 F 1 "220u" V 2504 6000 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 5850 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 6000 50  0001 C CNN
@@ -1258,10 +1258,10 @@ F 6 "Farnel:1144628" V 2250 6000 50  0001 C CNN "Supplier1"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C19
 U 1 1 5C5E6649
 P 10500 1350
-F 0 "C?" H 10382 1441 50  0000 R CNN
+F 0 "C19" H 10382 1441 50  0000 R CNN
 F 1 "220u" H 10382 1350 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10538 1200 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 10500 1350 50  0001 C CNN
@@ -1275,10 +1275,10 @@ Connection ~ 10500 1150
 Wire Wire Line
 	10500 1150 10500 1100
 $Comp
-L Device:CP C?
+L Device:CP C24
 U 1 1 5C5E742F
 P 10500 1850
-F 0 "C?" H 10382 1941 50  0000 R CNN
+F 0 "C24" H 10382 1941 50  0000 R CNN
 F 1 "220u" H 10382 1850 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10538 1700 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 10500 1850 50  0001 C CNN

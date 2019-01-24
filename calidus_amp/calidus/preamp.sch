@@ -647,8 +647,8 @@ L Device:CP C?
 U 1 1 5C5A5B6F
 P 9800 2150
 AR Path="/5C37BC48/5C5A5B6F" Ref="C?"  Part="1" 
-AR Path="/5C4751C0/5C5A5B6F" Ref="C?"  Part="1" 
-F 0 "C?" H 9682 2241 50  0000 R CNN
+AR Path="/5C4751C0/5C5A5B6F" Ref="C44"  Part="1" 
+F 0 "C44" H 9682 2241 50  0000 R CNN
 F 1 "10u" H 9682 2150 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 9838 2000 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 9800 2150 50  0001 C CNN
@@ -663,8 +663,8 @@ L Device:CP C?
 U 1 1 5C5A7F98
 P 9800 2650
 AR Path="/5C37BC48/5C5A7F98" Ref="C?"  Part="1" 
-AR Path="/5C4751C0/5C5A7F98" Ref="C?"  Part="1" 
-F 0 "C?" H 9682 2741 50  0000 R CNN
+AR Path="/5C4751C0/5C5A7F98" Ref="C48"  Part="1" 
+F 0 "C48" H 9682 2741 50  0000 R CNN
 F 1 "10u" H 9682 2650 50  0000 R CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 9838 2500 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 9800 2650 50  0001 C CNN
@@ -675,10 +675,10 @@ F 6 "Farnell:1144632" H 9800 2650 50  0001 C CNN "Supplier1"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C56
 U 1 1 5C5AD364
 P 4000 5300
-F 0 "C?" V 3655 5300 50  0000 C CNN
+F 0 "C56" V 3655 5300 50  0000 C CNN
 F 1 "4u7" V 3746 5300 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4038 5150 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4000 5300 50  0001 C CNN
@@ -693,8 +693,8 @@ L Device:CP C?
 U 1 1 5C5B02C7
 P 6350 2600
 AR Path="/5C37BC7C/5C5B02C7" Ref="C?"  Part="1" 
-AR Path="/5C4751C0/5C5B02C7" Ref="C?"  Part="1" 
-F 0 "C?" V 6005 2600 50  0000 C CNN
+AR Path="/5C4751C0/5C5B02C7" Ref="C46"  Part="1" 
+F 0 "C46" V 6005 2600 50  0000 C CNN
 F 1 "47u" V 6096 2600 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6388 2450 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 6350 2600 50  0001 C CNN
@@ -709,8 +709,8 @@ L Device:CP C?
 U 1 1 5C5B28EB
 P 6350 5200
 AR Path="/5C37BC7C/5C5B28EB" Ref="C?"  Part="1" 
-AR Path="/5C4751C0/5C5B28EB" Ref="C?"  Part="1" 
-F 0 "C?" V 6005 5200 50  0000 C CNN
+AR Path="/5C4751C0/5C5B28EB" Ref="C55"  Part="1" 
+F 0 "C55" V 6005 5200 50  0000 C CNN
 F 1 "47u" V 6096 5200 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6388 5050 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 6350 5200 50  0001 C CNN
