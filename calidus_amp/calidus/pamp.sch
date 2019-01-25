@@ -89,8 +89,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 1800 3000 1800
 Connection ~ 2900 2400
-Wire Wire Line
-	2900 2400 2800 2400
 $Comp
 L power:GNDS #PWR015
 U 1 1 5C37D3AE
@@ -104,35 +102,6 @@ F 3 "" H 3400 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 1800 3400 1800
-$Comp
-L Device:R R17
-U 1 1 5C37D5D9
-P 2650 2400
-F 0 "R17" V 2261 2400 50  0000 C CNN
-F 1 "499" V 2352 2400 50  0000 C CNN
-F 2 "" V 2580 2400 50  0001 C CNN
-F 3 "~" H 2650 2400 50  0001 C CNN
-F 4 "1/4" V 2443 2400 50  0000 C CNN "Power"
-F 5 "MF" V 2534 2400 50  0000 C CNN "Type"
-	1    2650 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP C26
-U 1 1 5C37D603
-P 2250 2400
-F 0 "C26" V 1905 2400 50  0000 C CNN
-F 1 "220u" V 1996 2400 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 2250 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 2400 50  0001 C CNN
-F 4 "35V" V 2087 2400 50  0000 C CNN "Voltage"
-F 5 "Rybicon:35YXF220MEFC10X12.5" V 2250 2400 50  0001 C CNN "Manufacturer"
-F 6 "Farnel:1144628" V 2250 2400 50  0001 C CNN "Supplier1"
-	1    2250 2400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2400 2400 2500 2400
 Wire Wire Line
 	1950 2400 2100 2400
 Text HLabel 1950 2400 0    50   Input ~ 0
@@ -199,7 +168,7 @@ Connection ~ 4900 3200
 Text Notes 2100 3200 0    50   ~ 0
 1.44 SHP
 Text Notes 2100 1800 0    50   ~ 0
-52m HP
+1.32 HP
 $Comp
 L Device:CP C25
 U 1 1 5C37FBD5
@@ -402,8 +371,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 5200 3000 5200
 Connection ~ 2900 5800
-Wire Wire Line
-	2900 5800 2800 5800
 $Comp
 L power:GNDS #PWR024
 U 1 1 5C38B2CE
@@ -417,8 +384,6 @@ F 3 "" H 3400 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 5200 3400 5200
-Wire Wire Line
-	2400 5800 2500 5800
 Wire Wire Line
 	1950 5800 2100 5800
 Text HLabel 1950 5800 0    50   Input ~ 0
@@ -457,7 +422,7 @@ Connection ~ 4900 6600
 Text Notes 2100 6600 0    50   ~ 0
 1.44 SHP
 Text Notes 2100 5200 0    50   ~ 0
-52m HP
+1.32 HP
 Wire Wire Line
 	4100 5550 4100 5500
 NoConn ~ 4000 6250
@@ -603,9 +568,11 @@ U 1 1 5C3C31AE
 P 6100 1550
 F 0 "C20" H 6217 1641 50  0000 L CNN
 F 1 "10u" H 6217 1550 50  0000 L CNN
-F 2 "" H 6138 1400 50  0001 C CNN
-F 3 "~" H 6100 1550 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6138 1400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1723232.pdf" H 6100 1550 50  0001 C CNN
 F 4 "16V" H 6217 1459 50  0000 L CNN "Voltage"
+F 5 "Multicomp:MCGPR16V106M5X11" H 6100 1550 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:9451056" H 6100 1550 50  0001 C CNN "Supplier1"
 	1    6100 1550
 	-1   0    0    -1  
 $EndComp
@@ -625,10 +592,12 @@ U 1 1 5C3D1E61
 P 6650 1000
 F 0 "R14" V 6261 1000 50  0000 C CNN
 F 1 "20k" V 6352 1000 50  0000 C CNN
-F 2 "" V 6580 1000 50  0001 C CNN
-F 3 "~" H 6650 1000 50  0001 C CNN
-F 4 "1/4" V 6443 1000 50  0000 C CNN "Power"
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6580 1000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1716726.pdf" H 6650 1000 50  0001 C CNN
+F 4 "1/8" V 6443 1000 50  0000 C CNN "Power"
 F 5 "C" V 6534 1000 50  0000 C CNN "Type"
+F 6 "Multicomp:MF12 20K" V 6650 1000 50  0001 C CNN "Manufacturer"
+F 7 "Farnell:9342796" V 6650 1000 50  0001 C CNN "Supplier1"
 	1    6650 1000
 	0    1    1    0   
 $EndComp
@@ -774,18 +743,6 @@ F 5 "MF" V 3034 1800 50  0000 C CNN "Type"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C21
-U 1 1 5C46A2D8
-P 6400 1550
-F 0 "C21" H 6282 1641 50  0000 R CNN
-F 1 "10u" H 6282 1550 50  0000 R CNN
-F 2 "" H 6438 1400 50  0001 C CNN
-F 3 "~" H 6400 1550 50  0001 C CNN
-F 4 "16V" H 6282 1459 50  0000 R CNN "Voltage"
-	1    6400 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R28
 U 1 1 5C46AB3E
 P 4900 6850
@@ -838,19 +795,6 @@ F 4 "1/2" H 5470 6805 50  0000 L CNN "Power"
 F 5 "C" H 5470 6714 50  0000 L CNN "Type"
 	1    5400 6850
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5C46C066
-P 7150 1300
-F 0 "R15" V 7265 1300 50  0000 C CNN
-F 1 "20k" V 7356 1300 50  0000 C CNN
-F 2 "" V 7080 1300 50  0001 C CNN
-F 3 "~" H 7150 1300 50  0001 C CNN
-F 4 "1/4" V 7447 1300 50  0000 C CNN "Power"
-F 5 "C" V 7538 1300 50  0000 C CNN "Type"
-	1    7150 1300
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C36
@@ -1026,19 +970,6 @@ F 5 "MF" V 3038 2600 50  0000 C CNN "Type"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R24
-U 1 1 5C483D2D
-P 2650 5800
-F 0 "R24" V 2261 5800 50  0000 C CNN
-F 1 "499" V 2352 5800 50  0000 C CNN
-F 2 "" V 2580 5800 50  0001 C CNN
-F 3 "~" H 2650 5800 50  0001 C CNN
-F 4 "1/4" V 2443 5800 50  0000 C CNN "Power"
-F 5 "MF" V 2534 5800 50  0000 C CNN "Type"
-	1    2650 5800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R26
 U 1 1 5C483DC7
 P 2650 6000
@@ -1115,8 +1046,6 @@ F 3 "" H 9200 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9200 1600 9300 1600
-Wire Wire Line
-	10500 1200 10500 1150
 Wire Wire Line
 	9300 1100 9900 1100
 Connection ~ 9900 1100
@@ -1221,40 +1150,12 @@ U 1 1 5C5E5E74
 P 2250 2600
 F 0 "C27" V 2413 2600 50  0000 C CNN
 F 1 "220u" V 2504 2600 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 2450 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2288 2450 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 2600 50  0001 C CNN
-F 4 "35V" V 2595 2600 50  0000 C CNN "Voltage"
-F 5 "Rybicon:35YXF220MEFC10X12.5" V 2250 2600 50  0001 C CNN "Manufacturer"
-F 6 "Farnel:1144628" V 2250 2600 50  0001 C CNN "Supplier1"
+F 4 "10V" V 2595 2600 50  0000 C CNN "Voltage"
+F 5 "Rybicon:10YXF220MEFC6.3X11" V 2250 2600 50  0001 C CNN "Manufacturer"
+F 6 "Farnel:1144609" V 2250 2600 50  0001 C CNN "Supplier1"
 	1    2250 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP C38
-U 1 1 5C5E631C
-P 2250 5800
-F 0 "C38" V 1905 5800 50  0000 C CNN
-F 1 "220u" V 1996 5800 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 5650 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 5800 50  0001 C CNN
-F 4 "35V" V 2087 5800 50  0000 C CNN "Voltage"
-F 5 "Rybicon:35YXF220MEFC10X12.5" V 2250 5800 50  0001 C CNN "Manufacturer"
-F 6 "Farnel:1144628" V 2250 5800 50  0001 C CNN "Supplier1"
-	1    2250 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP C39
-U 1 1 5C5E6449
-P 2250 6000
-F 0 "C39" V 2413 6000 50  0000 C CNN
-F 1 "220u" V 2504 6000 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2288 5850 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 6000 50  0001 C CNN
-F 4 "35V" V 2595 6000 50  0000 C CNN "Voltage"
-F 5 "Rybicon:35YXF220MEFC10X12.5" V 2250 6000 50  0001 C CNN "Manufacturer"
-F 6 "Farnel:1144628" V 2250 6000 50  0001 C CNN "Supplier1"
-	1    2250 6000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1271,9 +1172,6 @@ F 6 "Farnel:1144628" V 10500 1350 50  0001 C CNN "Supplier1"
 	1    10500 1350
 	-1   0    0    -1  
 $EndComp
-Connection ~ 10500 1150
-Wire Wire Line
-	10500 1150 10500 1100
 $Comp
 L Device:CP C24
 U 1 1 5C5E742F
@@ -1287,5 +1185,88 @@ F 5 "Rybicon:35YXF220MEFC10X12.5" V 10500 1850 50  0001 C CNN "Manufacturer"
 F 6 "Farnel:1144628" V 10500 1850 50  0001 C CNN "Supplier1"
 	1    10500 1850
 	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1100 10500 1200
+$Comp
+L Device:CP C?
+U 1 1 5C4C9B48
+P 6400 1550
+F 0 "C?" H 6282 1641 50  0000 R CNN
+F 1 "10u" H 6282 1550 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6438 1400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1723232.pdf" H 6400 1550 50  0001 C CNN
+F 4 "16V" H 6282 1459 50  0000 R CNN "Voltage"
+F 5 "Multicomp:MCGPR16V106M5X11" H 6400 1550 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:9451056" H 6400 1550 50  0001 C CNN "Supplier1"
+	1    6400 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2400 2900 2400
+$Comp
+L Device:CP C?
+U 1 1 5C4E1EBF
+P 2250 2400
+AR Path="/5C37BC48/5C4E1EBF" Ref="C?"  Part="1" 
+AR Path="/5C4751C0/5C4E1EBF" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C4E1EBF" Ref="C?"  Part="1" 
+F 0 "C?" V 1905 2400 50  0000 C CNN
+F 1 "10u" V 1996 2400 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2288 2250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 2250 2400 50  0001 C CNN
+F 4 "50V" V 2087 2400 50  0000 C CNN "Voltage"
+F 5 "Rybicon:50YXF10MEFC5X11" H 2250 2400 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144632" H 2250 2400 50  0001 C CNN "Supplier1"
+	1    2250 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C4ED50B
+P 2250 5800
+AR Path="/5C37BC48/5C4ED50B" Ref="C?"  Part="1" 
+AR Path="/5C4751C0/5C4ED50B" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C4ED50B" Ref="C?"  Part="1" 
+F 0 "C?" V 1905 5800 50  0000 C CNN
+F 1 "10u" V 1996 5800 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2288 5650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 2250 5800 50  0001 C CNN
+F 4 "50V" V 2087 5800 50  0000 C CNN "Voltage"
+F 5 "Rybicon:50YXF10MEFC5X11" H 2250 5800 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144632" H 2250 5800 50  0001 C CNN "Supplier1"
+	1    2250 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 5800 2900 5800
+$Comp
+L Device:CP C?
+U 1 1 5C4F6242
+P 2250 6000
+F 0 "C?" V 2413 6000 50  0000 C CNN
+F 1 "220u" V 2504 6000 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2288 5850 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 2250 6000 50  0001 C CNN
+F 4 "10V" V 2595 6000 50  0000 C CNN "Voltage"
+F 5 "Rybicon:10YXF220MEFC6.3X11" V 2250 6000 50  0001 C CNN "Manufacturer"
+F 6 "Farnel:1144609" V 2250 6000 50  0001 C CNN "Supplier1"
+	1    2250 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4F9DF0
+P 7150 1300
+F 0 "R?" V 7265 1300 50  0000 C CNN
+F 1 "20k" V 7356 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7080 1300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1716726.pdf" H 7150 1300 50  0001 C CNN
+F 4 "1/8" V 7447 1300 50  0000 C CNN "Power"
+F 5 "C" V 7538 1300 50  0000 C CNN "Type"
+F 6 "Multicomp:MF12 20K" V 7150 1300 50  0001 C CNN "Manufacturer"
+F 7 "Farnell:9342796" V 7150 1300 50  0001 C CNN "Supplier1"
+	1    7150 1300
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
