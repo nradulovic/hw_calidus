@@ -48,16 +48,12 @@ resistor Rzi is ``Rzi=75ohm`` and the capacitor Czi is ``Czi=220pF``.
 This network should be placed right at the input connector, not on the 
 main amplifier PCB.
 
-Input OPAMP should be JFET type since JFET differential inputs are more immune 
-to EMI.
 
 Input low-pass filter
 ---------------------
 
 URL: http://www.johnhearfield.com/RC/RC4.htm
 
-Low frequency signal shaping
-----------------------------
 
 Power amplifier
 ===============
