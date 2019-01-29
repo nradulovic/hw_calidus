@@ -36,12 +36,14 @@ F5 "overload" O R 6700 2400 50
 F6 "in_r" I L 5500 2000 50 
 F7 "out_r" O R 6700 2000 50 
 F8 "stby" I R 6700 2600 50 
+F9 "ingnd_l" I L 5500 1900 50 
+F10 "ingnd_r" I L 5500 2100 50 
 $EndSheet
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L Connector_Generic:Conn_01x03 J2
 U 1 1 5C47FAB8
 P 1400 1900
-F 0 "J1" H 1320 2217 50  0000 C CNN
+F 0 "J2" H 1320 2217 50  0000 C CNN
 F 1 "power" H 1320 2126 50  0000 C CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 1400 1900 50  0001 C CNN
 F 3 "~" H 1400 1900 50  0001 C CNN
@@ -59,10 +61,10 @@ Wire Wire Line
 Wire Wire Line
 	5100 1900 4500 1900
 $Comp
-L Connector_Generic:Conn_01x02 J7
+L Connector_Generic:Conn_01x02 J1
 U 1 1 5C47FBF8
 P 7300 1800
-F 0 "J7" H 7219 1475 50  0000 C CNN
+F 0 "J1" H 7219 1475 50  0000 C CNN
 F 1 "left_out" H 7219 1566 50  0000 C CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 7300 1800 50  0001 C CNN
 F 3 "~" H 7300 1800 50  0001 C CNN
@@ -70,10 +72,10 @@ F 3 "~" H 7300 1800 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J8
+L Connector_Generic:Conn_01x02 J4
 U 1 1 5C47FC30
 P 7300 2000
-F 0 "J8" H 7380 1992 50  0000 L CNN
+F 0 "J4" H 7380 1992 50  0000 L CNN
 F 1 "right_out" H 7380 1901 50  0000 L CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 7300 2000 50  0001 C CNN
 F 3 "~" H 7300 2000 50  0001 C CNN
@@ -91,10 +93,10 @@ Wire Wire Line
 Wire Wire Line
 	7000 2100 7100 2100
 $Comp
-L power:GNDPWR #PWR04
+L power:GNDPWR #PWR01
 U 1 1 5C47FEE1
 P 7000 2200
-F 0 "#PWR04" H 7000 2000 50  0001 C CNN
+F 0 "#PWR01" H 7000 2000 50  0001 C CNN
 F 1 "GNDPWR" H 7004 2046 50  0000 C CNN
 F 2 "" H 7000 2150 50  0001 C CNN
 F 3 "" H 7000 2150 50  0001 C CNN
@@ -131,10 +133,10 @@ Wire Wire Line
 Text GLabel 8100 4100 1    50   Input ~ 0
 +pdvs
 $Comp
-L Connector_Generic:Conn_01x02 J10
+L Connector_Generic:Conn_01x02 J8
 U 1 1 5C4DAFE8
 P 8400 4600
-F 0 "J10" H 8480 4592 50  0000 L CNN
+F 0 "J8" H 8480 4592 50  0000 L CNN
 F 1 "led_overload" H 8480 4501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4600 50  0001 C CNN
 F 3 "~" H 8400 4600 50  0001 C CNN
@@ -142,10 +144,10 @@ F 3 "~" H 8400 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J11
+L Connector_Generic:Conn_01x02 J10
 U 1 1 5C4DB050
 P 8400 4900
-F 0 "J11" H 8480 4892 50  0000 L CNN
+F 0 "J10" H 8480 4892 50  0000 L CNN
 F 1 "led_power" H 8480 4801 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4900 50  0001 C CNN
 F 3 "~" H 8400 4900 50  0001 C CNN
@@ -162,10 +164,10 @@ Wire Wire Line
 	8100 4900 8200 4900
 Connection ~ 8100 4600
 $Comp
-L Connector_Generic:Conn_01x02 J9
+L Connector_Generic:Conn_01x02 J7
 U 1 1 5C4E1437
 P 8400 4300
-F 0 "J9" H 8480 4292 50  0000 L CNN
+F 0 "J7" H 8480 4292 50  0000 L CNN
 F 1 "mute_key" H 8480 4201 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4300 50  0001 C CNN
 F 3 "~" H 8400 4300 50  0001 C CNN
@@ -216,10 +218,10 @@ Wire Wire Line
 Wire Wire Line
 	7000 3900 6700 3900
 $Comp
-L Connector_Generic:Conn_01x06 J4
+L Connector_Generic:Conn_01x06 J6
 U 1 1 5C4F09AA
 P 4300 4000
-F 0 "J4" H 4220 4417 50  0000 C CNN
+F 0 "J6" H 4220 4417 50  0000 C CNN
 F 1 "icsp" H 4220 4326 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4300 4000 50  0001 C CNN
 F 3 "~" H 4300 4000 50  0001 C CNN
@@ -237,8 +239,8 @@ L power:GNDD #PWR?
 U 1 1 5C504FC8
 P 4800 5500
 AR Path="/5C43C4AB/5C504FC8" Ref="#PWR?"  Part="1" 
-AR Path="/5C504FC8" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 4800 5250 50  0001 C CNN
+AR Path="/5C504FC8" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 4800 5250 50  0001 C CNN
 F 1 "GNDD" H 4804 5345 50  0000 C CNN
 F 2 "" H 4800 5500 50  0001 C CNN
 F 3 "" H 4800 5500 50  0001 C CNN
@@ -267,10 +269,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 4200 5200 4200
 $Comp
-L Connector_Generic:Conn_01x03 J5
+L Connector_Generic:Conn_01x03 J9
 U 1 1 5C51607F
 P 4300 4700
-F 0 "J5" H 4380 4650 50  0000 L CNN
+F 0 "J9" H 4380 4650 50  0000 L CNN
 F 1 "service" H 4380 4741 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4300 4700 50  0001 C CNN
 F 3 "~" H 4300 4700 50  0001 C CNN
@@ -314,10 +316,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 4000 4500 4000
 $Comp
-L Connector_Generic:Conn_01x04 J6
+L Connector_Generic:Conn_01x04 J11
 U 1 1 5C5CE216
 P 4300 5300
-F 0 "J6" H 4380 5200 50  0000 L CNN
+F 0 "J11" H 4380 5200 50  0000 L CNN
 F 1 "sense_bus" H 4380 5291 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4300 5300 50  0001 C CNN
 F 3 "~" H 4300 5300 50  0001 C CNN
@@ -353,10 +355,10 @@ F 3 "~" H 1200 6900 50  0001 C CNN
 $EndComp
 NoConn ~ 1200 7000
 $Comp
-L Mechanical:MountingHole_Pad H2
+L Mechanical:MountingHole_Pad H3
 U 1 1 5C581F06
 P 1200 7200
-F 0 "H2" H 1300 7251 50  0000 L CNN
+F 0 "H3" H 1300 7251 50  0000 L CNN
 F 1 "Mounting" H 1300 7160 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1200 7200 50  0001 C CNN
 F 3 "~" H 1200 7200 50  0001 C CNN
@@ -365,10 +367,10 @@ F 3 "~" H 1200 7200 50  0001 C CNN
 $EndComp
 NoConn ~ 1200 7300
 $Comp
-L Mechanical:MountingHole_Pad H3
+L Mechanical:MountingHole_Pad H2
 U 1 1 5C5841CE
 P 1800 6900
-F 0 "H3" H 1900 6951 50  0000 L CNN
+F 0 "H2" H 1900 6951 50  0000 L CNN
 F 1 "Mounting" H 1900 6860 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1800 6900 50  0001 C CNN
 F 3 "~" H 1800 6900 50  0001 C CNN
@@ -399,10 +401,10 @@ Wire Notes Line
 Text Notes 1100 7500 0    50   ~ 0
 Mechanical elements
 $Comp
-L power:GNDPWR #PWR01
+L power:GNDPWR #PWR02
 U 1 1 5C50E81E
 P 4800 2500
-F 0 "#PWR01" H 4800 2300 50  0001 C CNN
+F 0 "#PWR02" H 4800 2300 50  0001 C CNN
 F 1 "GNDPWR" H 4804 2346 50  0000 C CNN
 F 2 "" H 4800 2450 50  0001 C CNN
 F 3 "" H 4800 2450 50  0001 C CNN
@@ -430,10 +432,10 @@ Wire Wire Line
 Wire Wire Line
 	4600 1000 5100 1000
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L Connector_Generic:Conn_01x04 J3
 U 1 1 5C540E50
 P 4300 1900
-F 0 "J2" H 4380 1850 50  0000 L CNN
+F 0 "J3" H 4380 1850 50  0000 L CNN
 F 1 "input" H 4380 1941 50  0000 L CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 4300 1900 50  0001 C CNN
 F 3 "~" H 4300 1900 50  0001 C CNN
@@ -441,10 +443,10 @@ F 3 "~" H 4300 1900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J3
+L Connector_Generic:Conn_01x03 J5
 U 1 1 5C540ED0
 P 4300 2300
-F 0 "J3" H 4380 2250 50  0000 L CNN
+F 0 "J5" H 4380 2250 50  0000 L CNN
 F 1 "prevs" H 4380 2341 50  0000 L CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 4300 2300 50  0001 C CNN
 F 3 "~" H 4300 2300 50  0001 C CNN
@@ -459,4 +461,10 @@ Wire Wire Line
 	5250 2400 5250 2100
 Wire Wire Line
 	5250 2100 4500 2100
+Wire Wire Line
+	5500 1900 5100 1900
+Connection ~ 5100 1900
+Wire Wire Line
+	5500 2100 5250 2100
+Connection ~ 5250 2100
 $EndSCHEMATC
