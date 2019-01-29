@@ -798,28 +798,6 @@ Wire Wire Line
 Text Notes 1500 5400 0    50   ~ 0
 Power amplifier power supply
 $Comp
-L Mechanical:Heatsink HS1
-U 1 1 5C460FCB
-P 8000 6250
-F 0 "HS1" H 8142 6371 50  0000 L CNN
-F 1 "Heatsink" H 8142 6280 50  0000 L CNN
-F 2 "Heatsink:Heatsink_Fischer_SK104-STCB_35x13mm__2xDrill3.5mm_ScrewM3" H 8012 6250 50  0001 C CNN
-F 3 "" H 8012 6250 50  0001 C CNN
-	1    8000 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Heatsink HS2
-U 1 1 5C4610C3
-P 8700 6250
-F 0 "HS2" H 8842 6371 50  0000 L CNN
-F 1 "Heatsink" H 8842 6280 50  0000 L CNN
-F 2 "Heatsink:Heatsink_Fischer_SK104-STCB_35x13mm__2xDrill3.5mm_ScrewM3" H 8712 6250 50  0001 C CNN
-F 3 "" H 8712 6250 50  0001 C CNN
-	1    8700 6250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LM337_TO220 U2
 U 1 1 5C46147E
 P 6700 4100
