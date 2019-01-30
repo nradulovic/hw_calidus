@@ -32,8 +32,10 @@ P 4300 2550
 F 0 "C3" H 4418 2641 50  0000 L CNN
 F 1 "10m" H 4418 2550 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D30.0mm_P10.00mm_SnapIn" H 4338 2400 50  0001 C CNN
-F 3 "~" H 4300 2550 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2280821.pdf" H 4300 2550 50  0001 C CNN
 F 4 "35V" H 4418 2459 50  0000 L CNN "Voltage"
+F 5 "Epcos:B41252B7109M000" H 4300 2550 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:2750101" H 4300 2550 50  0001 C CNN "Supplier1"
 	1    4300 2550
 	1    0    0    -1  
 $EndComp
@@ -226,20 +228,6 @@ F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7050 4700 50  0001 C CNN
 F 3 "~" H 7050 4700 50  0001 C CNN
 	1    7050 4700
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:CP C5
-U 1 1 5C3CB3E8
-P 7600 2550
-F 0 "C5" H 7482 2641 50  0000 R CNN
-F 1 "47u" H 7482 2550 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7638 2400 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 7600 2550 50  0001 C CNN
-F 4 "100V" H 7482 2459 50  0000 R CNN "Voltage"
-F 5 "Rybicon:100YXF47MEFC10X16" H 7600 2550 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144641" H 7600 2550 50  0001 C CNN "Supplier1"
-	1    7600 2550
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4150 1500 4450 1500
@@ -507,18 +495,6 @@ F 6 "Farnell:1144639" V 4600 1500 50  0001 C CNN "Supplier"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C6
-U 1 1 5C45A6BB
-P 4300 3050
-F 0 "C6" H 4418 3141 50  0000 L CNN
-F 1 "10m" H 4418 3050 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D30.0mm_P10.00mm_SnapIn" H 4338 2900 50  0001 C CNN
-F 3 "~" H 4300 3050 50  0001 C CNN
-F 4 "35V" H 4418 2959 50  0000 L CNN "Voltage"
-	1    4300 3050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDPWR #PWR08
 U 1 1 5C45ABCE
 P 2300 4800
@@ -613,7 +589,7 @@ F 3 "http://www.farnell.com/datasheets/2321180.pdf" H 2300 2150 50  0001 C CNN
 F 4 "100V" H 2415 2105 50  0000 L CNN "Voltage"
 F 5 "X1" H 2415 2014 50  0000 L CNN "Type"
 F 6 "Kemet:PHE844RD6220MR06L2" H 2300 2150 50  0001 C CNN "Manufacturer"
-F 7 "Farnell:2943922" H 2300 2150 50  0001 C CNN "Supplier"
+F 7 "Farnell:2943922" H 2300 2150 50  0001 C CNN "Supplier1"
 	1    2300 2150
 	1    0    0    -1  
 $EndComp
@@ -915,7 +891,7 @@ F 3 "http://www.farnell.com/datasheets/2321180.pdf" H 2300 3450 50  0001 C CNN
 F 4 "100V" H 2415 3405 50  0000 L CNN "Voltage"
 F 5 "X1" H 2415 3314 50  0000 L CNN "Type"
 F 6 "Kemet:PHE844RD6220MR06L2" H 2300 3450 50  0001 C CNN "Manufacturer"
-F 7 "Farnell:2943922" H 2300 3450 50  0001 C CNN "Supplier"
+F 7 "Farnell:2943922" H 2300 3450 50  0001 C CNN "Supplier1"
 	1    2300 3450
 	1    0    0    -1  
 $EndComp
@@ -945,20 +921,6 @@ F 4 "50V" H 5982 6259 50  0000 R CNN "Voltage"
 F 5 "Rybicon:50YXF10MEFC5X11" H 6100 6350 50  0001 C CNN "Manufacturer"
 F 6 "Farnell:1144632" H 6100 6350 50  0001 C CNN "Supplier1"
 	1    6100 6350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:CP C8
-U 1 1 5C5B32B4
-P 7600 3050
-F 0 "C8" H 7482 3141 50  0000 R CNN
-F 1 "47u" H 7482 3050 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7638 2900 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 7600 3050 50  0001 C CNN
-F 4 "100V" H 7482 2959 50  0000 R CNN "Voltage"
-F 5 "Rybicon:100YXF47MEFC10X16" H 7600 3050 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144641" H 7600 3050 50  0001 C CNN "Supplier1"
-	1    7600 3050
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1128,4 +1090,50 @@ F 3 "" H 2100 7050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2100 7100 2250 7100
+$Comp
+L Device:CP C6
+U 1 1 5C51F768
+P 4300 3050
+F 0 "C6" H 4418 3141 50  0000 L CNN
+F 1 "10m" H 4418 3050 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D30.0mm_P10.00mm_SnapIn" H 4338 2900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2280821.pdf" H 4300 3050 50  0001 C CNN
+F 4 "35V" H 4418 2959 50  0000 L CNN "Voltage"
+F 5 "Epcos:B41252B7109M000" H 4300 3050 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:2750101" H 4300 3050 50  0001 C CNN "Supplier1"
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5C52E228
+P 7600 2550
+AR Path="/5C37BC48/5C52E228" Ref="C5"  Part="1" 
+AR Path="/5C37BC7C/5C52E228" Ref="C?"  Part="1" 
+F 0 "C5" H 7482 2641 50  0000 R CNN
+F 1 "47u" H 7482 2550 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7638 2400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 7600 2550 50  0001 C CNN
+F 4 "50V" H 7482 2459 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 7600 2550 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 7600 2550 50  0001 C CNN "Supplier1"
+	1    7600 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 5C53391A
+P 7600 3050
+AR Path="/5C37BC48/5C53391A" Ref="C8"  Part="1" 
+AR Path="/5C37BC7C/5C53391A" Ref="C?"  Part="1" 
+F 0 "C8" H 7482 3141 50  0000 R CNN
+F 1 "47u" H 7482 3050 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7638 2900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 7600 3050 50  0001 C CNN
+F 4 "50V" H 7482 2959 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 7600 3050 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 7600 3050 50  0001 C CNN "Supplier1"
+	1    7600 3050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

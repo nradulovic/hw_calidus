@@ -130,20 +130,6 @@ Text Notes 2100 3200 0    50   ~ 0
 1.44 SHP
 Text Notes 2100 1800 0    50   ~ 0
 1.32 HP
-$Comp
-L Device:CP C23
-U 1 1 5C37FBD5
-P 4100 1950
-F 0 "C23" H 3982 1859 50  0000 R CNN
-F 1 "47u" H 3982 1950 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4138 1800 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4100 1950 50  0001 C CNN
-F 4 "35V" H 3982 2041 50  0000 R CNN "Voltage"
-F 5 "Rybicon:35YXF47MEFC6.3X11" H 4100 1950 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144626" H 4100 1950 50  0001 C CNN "Supplier1"
-	1    4100 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4100 2150 4100 2100
 NoConn ~ 4000 2850
@@ -208,7 +194,7 @@ U 1 1 5C382803
 P 5150 1900
 F 0 "D13" H 5150 2116 50  0000 C CNN
 F 1 "1N5404" H 5150 2025 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 5150 1900 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5150 1900 50  0001 C CNN
 F 3 "~" H 5150 1900 50  0001 C CNN
 	1    5150 1900
 	1    0    0    -1  
@@ -219,7 +205,7 @@ U 1 1 5C3828AD
 P 5150 1600
 F 0 "D12" H 5150 1816 50  0000 C CNN
 F 1 "1N5404" H 5150 1725 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 5150 1600 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5150 1600 50  0001 C CNN
 F 3 "~" H 5150 1600 50  0001 C CNN
 	1    5150 1600
 	-1   0    0    -1  
@@ -396,7 +382,7 @@ U 1 1 5C38B34A
 P 5150 5300
 F 0 "D15" H 5150 5516 50  0000 C CNN
 F 1 "1N5404" H 5150 5425 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 5150 5300 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5150 5300 50  0001 C CNN
 F 3 "~" H 5150 5300 50  0001 C CNN
 	1    5150 5300
 	1    0    0    -1  
@@ -407,7 +393,7 @@ U 1 1 5C38B351
 P 5150 5000
 F 0 "D14" H 5150 5216 50  0000 C CNN
 F 1 "1N5404" H 5150 5125 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 5150 5000 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5150 5000 50  0001 C CNN
 F 3 "~" H 5150 5000 50  0001 C CNN
 	1    5150 5000
 	-1   0    0    -1  
@@ -884,7 +870,7 @@ U 1 1 5C483CBD
 P 2650 2600
 F 0 "R22" V 2765 2600 50  0000 C CNN
 F 1 "499" V 2856 2600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2580 2600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 2600 50  0001 C CNN
 F 3 "~" H 2650 2600 50  0001 C CNN
 F 4 "1/4" V 2947 2600 50  0000 C CNN "Power"
 F 5 "MF" V 3038 2600 50  0000 C CNN "Type"
@@ -897,7 +883,7 @@ U 1 1 5C483DC7
 P 2650 6000
 F 0 "R29" V 2765 6000 50  0000 C CNN
 F 1 "499" V 2856 6000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2580 6000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 6000 50  0001 C CNN
 F 3 "~" H 2650 6000 50  0001 C CNN
 F 4 "1/4" V 2947 6000 50  0000 C CNN "Power"
 F 5 "MF" V 3038 6000 50  0000 C CNN "Type"
@@ -1021,20 +1007,6 @@ Place the capacitors as\nclose as possible to IC\npins
 Text Notes 9000 2600 0    50   ~ 0
 Place the capacitors as\nclose as possible to IC\npins
 $Comp
-L Device:CP C38
-U 1 1 5C5AF4B7
-P 4100 5350
-F 0 "C38" H 3982 5259 50  0000 R CNN
-F 1 "47u" H 3982 5350 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4138 5200 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4100 5350 50  0001 C CNN
-F 4 "35V" H 3982 5441 50  0000 R CNN "Voltage"
-F 5 "Rybicon:35YXF47MEFC6.3X11" H 4100 5350 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144626" H 4100 5350 50  0001 C CNN "Supplier1"
-	1    4100 5350
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:CP C?
 U 1 1 5C5B3FFC
 P 9900 3150
@@ -1042,28 +1014,12 @@ AR Path="/5C37BC48/5C5B3FFC" Ref="C?"  Part="1"
 AR Path="/5C37BC7C/5C5B3FFC" Ref="C29"  Part="1" 
 F 0 "C29" H 9782 3241 50  0000 R CNN
 F 1 "47u" H 9782 3150 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9938 3000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 9900 3150 50  0001 C CNN
-F 4 "100V" H 9782 3059 50  0000 R CNN "Voltage"
-F 5 "Rybicon:100YXF47MEFC10X16" H 9900 3150 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144641" H 9900 3150 50  0001 C CNN "Supplier1"
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 9938 3000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 9900 3150 50  0001 C CNN
+F 4 "50V" H 9782 3059 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 9900 3150 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 9900 3150 50  0001 C CNN "Supplier1"
 	1    9900 3150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 5C5CD581
-P 9900 3650
-AR Path="/5C37BC48/5C5CD581" Ref="C?"  Part="1" 
-AR Path="/5C37BC7C/5C5CD581" Ref="C34"  Part="1" 
-F 0 "C34" H 9782 3741 50  0000 R CNN
-F 1 "47u" H 9782 3650 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9938 3500 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 9900 3650 50  0001 C CNN
-F 4 "100V" H 9782 3559 50  0000 R CNN "Voltage"
-F 5 "Rybicon:100YXF47MEFC10X16" H 9900 3650 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144641" H 9900 3650 50  0001 C CNN "Supplier1"
-	1    9900 3650
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1224,7 +1180,7 @@ U 1 1 5C526310
 P 2650 2400
 F 0 "R20" V 2261 2400 50  0000 C CNN
 F 1 "499" V 2352 2400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2580 2400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 2400 50  0001 C CNN
 F 3 "~" H 2650 2400 50  0001 C CNN
 F 4 "1/4" V 2443 2400 50  0000 C CNN "Power"
 F 5 "MF" V 2534 2400 50  0000 C CNN "Type"
@@ -1292,7 +1248,7 @@ U 1 1 5C54E76B
 P 2650 5800
 F 0 "R27" V 2261 5800 50  0000 C CNN
 F 1 "499" V 2352 5800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2580 5800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 5800 50  0001 C CNN
 F 3 "~" H 2650 5800 50  0001 C CNN
 F 4 "1/4" V 2443 5800 50  0000 C CNN "Power"
 F 5 "MF" V 2534 5800 50  0000 C CNN "Type"
@@ -1361,40 +1317,88 @@ Wire Wire Line
 	10500 3300 10500 3400
 Wire Wire Line
 	10500 3800 10500 3900
+Connection ~ 9900 2900
+Connection ~ 9900 3900
+Connection ~ 9900 2100
+Connection ~ 9900 1100
 $Comp
 L Device:CP C?
-U 1 1 5C542595
+U 1 1 5C52C9EF
+P 9900 3650
+AR Path="/5C37BC48/5C52C9EF" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C52C9EF" Ref="C34"  Part="1" 
+F 0 "C34" H 9782 3741 50  0000 R CNN
+F 1 "47u" H 9782 3650 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 9938 3500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 9900 3650 50  0001 C CNN
+F 4 "50V" H 9782 3559 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 9900 3650 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 9900 3650 50  0001 C CNN "Supplier1"
+	1    9900 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C52D5BD
 P 10500 3150
-AR Path="/5C37BC48/5C542595" Ref="C?"  Part="1" 
-AR Path="/5C37BC7C/5C542595" Ref="C30"  Part="1" 
+AR Path="/5C37BC48/5C52D5BD" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C52D5BD" Ref="C30"  Part="1" 
 F 0 "C30" H 10382 3241 50  0000 R CNN
 F 1 "47u" H 10382 3150 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10538 3000 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 10500 3150 50  0001 C CNN
-F 4 "100V" H 10382 3059 50  0000 R CNN "Voltage"
-F 5 "Rybicon:100YXF47MEFC10X16" H 10500 3150 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144641" H 10500 3150 50  0001 C CNN "Supplier1"
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 10538 3000 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 10500 3150 50  0001 C CNN
+F 4 "50V" H 10382 3059 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 10500 3150 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 10500 3150 50  0001 C CNN "Supplier1"
 	1    10500 3150
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:CP C?
-U 1 1 5C54259F
+U 1 1 5C52D6FF
 P 10500 3650
-AR Path="/5C37BC48/5C54259F" Ref="C?"  Part="1" 
-AR Path="/5C37BC7C/5C54259F" Ref="C35"  Part="1" 
+AR Path="/5C37BC48/5C52D6FF" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C52D6FF" Ref="C35"  Part="1" 
 F 0 "C35" H 10382 3741 50  0000 R CNN
 F 1 "47u" H 10382 3650 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 10538 3500 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2124421.pdf" H 10500 3650 50  0001 C CNN
-F 4 "100V" H 10382 3559 50  0000 R CNN "Voltage"
-F 5 "Rybicon:100YXF47MEFC10X16" H 10500 3650 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144641" H 10500 3650 50  0001 C CNN "Supplier1"
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 10538 3500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 10500 3650 50  0001 C CNN
+F 4 "50V" H 10382 3559 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 10500 3650 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 10500 3650 50  0001 C CNN "Supplier1"
 	1    10500 3650
 	-1   0    0    -1  
 $EndComp
-Connection ~ 9900 2900
-Connection ~ 9900 3900
-Connection ~ 9900 2100
-Connection ~ 9900 1100
+$Comp
+L Device:CP C?
+U 1 1 5C5349E4
+P 4100 1950
+AR Path="/5C37BC48/5C5349E4" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C5349E4" Ref="C23"  Part="1" 
+F 0 "C23" H 3982 1859 50  0000 R CNN
+F 1 "47u" H 3982 1950 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4138 1800 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4100 1950 50  0001 C CNN
+F 4 "50V" H 3982 2041 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 4100 1950 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 4100 1950 50  0001 C CNN "Supplier1"
+	1    4100 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C535B08
+P 4100 5350
+AR Path="/5C37BC48/5C535B08" Ref="C?"  Part="1" 
+AR Path="/5C37BC7C/5C535B08" Ref="C38"  Part="1" 
+F 0 "C38" H 3982 5259 50  0000 R CNN
+F 1 "47u" H 3982 5350 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4138 5200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4100 5350 50  0001 C CNN
+F 4 "50V" H 3982 5441 50  0000 R CNN "Voltage"
+F 5 "Rybicon:50YXF47MEFC6.3X11" H 4100 5350 50  0001 C CNN "Manufacturer"
+F 6 "Farnell:1144633" H 4100 5350 50  0001 C CNN "Supplier1"
+	1    4100 5350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

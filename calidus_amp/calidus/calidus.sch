@@ -45,7 +45,7 @@ U 1 1 5C47FAB8
 P 1400 1900
 F 0 "J2" H 1320 2217 50  0000 C CNN
 F 1 "power" H 1320 2126 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 1400 1900 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.81_1x03_P3.81mm_Vertical" H 1400 1900 50  0001 C CNN
 F 3 "~" H 1400 1900 50  0001 C CNN
 	1    1400 1900
 	-1   0    0    -1  
@@ -66,7 +66,7 @@ U 1 1 5C47FBF8
 P 7300 1800
 F 0 "J1" H 7219 1475 50  0000 C CNN
 F 1 "left_out" H 7219 1566 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 7300 1800 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical" H 7300 1800 50  0001 C CNN
 F 3 "~" H 7300 1800 50  0001 C CNN
 	1    7300 1800
 	1    0    0    1   
@@ -77,7 +77,7 @@ U 1 1 5C47FC30
 P 7300 2000
 F 0 "J4" H 7380 1992 50  0000 L CNN
 F 1 "right_out" H 7380 1901 50  0000 L CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 7300 2000 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical" H 7300 2000 50  0001 C CNN
 F 3 "~" H 7300 2000 50  0001 C CNN
 	1    7300 2000
 	1    0    0    -1  
@@ -434,13 +434,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J3
 U 1 1 5C540E50
-P 4300 1900
-F 0 "J3" H 4380 1850 50  0000 L CNN
-F 1 "input" H 4380 1941 50  0000 L CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 4300 1900 50  0001 C CNN
-F 3 "~" H 4300 1900 50  0001 C CNN
-	1    4300 1900
-	-1   0    0    -1  
+P 4300 2000
+F 0 "J3" H 4220 1575 50  0000 C CNN
+F 1 "input" H 4220 1666 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_4-G-3.5_1x04_P3.50mm_Vertical" H 4300 2000 50  0001 C CNN
+F 3 "~" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J5
