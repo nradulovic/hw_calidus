@@ -58,6 +58,7 @@ URL: http://www.johnhearfield.com/RC/RC4.htm
 Power amplifier
 ===============
 
+
 Output EMI suppression
 ----------------------
 
@@ -113,16 +114,15 @@ effective power of sinusoid signal. The power transformer is 200VA, meaning
 that each channel gets 100VA of power. 
 
 Maximum voltages at:
- * Maximum ``Pdiss=50W`` for TDA7293, and ``Pdiss=30W`` for LM1875.
+ * Maximum ``Pdiss=50W`` for TDA7293.
  * Load phase is ``LoadPHI=60degrees``.
  * Including quiescent current dissipation.
  * Case temperature is 60C degrees.
  * Taking into account OPS SOA.
 
+
 +-------------+-------------+-----------+--------------+
 | Zload [ohm] | Vsupply [V] | Vdrop [V] | Pdiss [W]    |
-+-------------+-------------+-----------+--------------+
-| Chip        |                TDA7293                  |
 +-------------+-------------+-----------+--------------+
 | 16          | 33          | 2.2       | 31.4         |
 +-------------+-------------+-----------+--------------+
@@ -349,11 +349,13 @@ Since the capacitance is on the border of practicallity we choose:
     Cf=3.3pF
     
 
+
 Power supply
 ============
 
-Power amplifier
-```````````````
+
+Power amplifier power supply
+----------------------------
 
 We are using dual symmetrical supplies from since dual secondaries. The high
 voltage supplies are stabilized using LM317/LM337 regulators and are used to
@@ -385,7 +387,7 @@ switching impulse. Recommended values are ``Rsn = 1 Ohm``, ``Csn = 470nF``::
 This snubber may be placed near the IC power supply lines, too.
 
 AC mains
-````````
+--------
 
 NOTE:
  * On case chassis there should be a safety ground screw just near at the input
