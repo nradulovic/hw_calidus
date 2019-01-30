@@ -57,8 +57,12 @@ U 1 1 5C46D3BF
 P 1500 1650
 F 0 "C45" H 1615 1696 50  0000 L CNN
 F 1 "100n" H 1615 1605 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 1538 1500 50  0001 C CNN
-F 3 "~" H 1500 1650 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L4.6mm_W3.0mm_P2.50mm_MKS02_FKP02" H 1538 1500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1306005.pdf" H 1500 1650 50  0001 C CNN
+F 4 "WIMA:MKS0C031000C00KSSD" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "Farnell:1006004" H 0   0   50  0001 C CNN "Supplier1"
+F 6 "PET" H 0   0   50  0001 C CNN "Type"
+F 7 "63V" H 0   0   50  0001 C CNN "Voltage"
 	1    1500 1650
 	1    0    0    -1  
 $EndComp
@@ -69,9 +73,11 @@ L pic18f26k40_isp:PIC18F26K40_ISP U6
 U 1 1 5C470457
 P 4400 4000
 F 0 "U6" H 4400 5178 50  0000 C CNN
-F 1 "PIC18F26K40_ISP" H 4400 5087 50  0000 C CNN
+F 1 "PIC18F26K42-I/SP" H 4400 5087 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W7.62mm_LongPads" H 3900 3500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/PIC18LF26-45-46K40-Data-Sheet-DS40001816F.pdf" H 4400 3950 50  0001 C CNN
+F 4 "Microchip:PIC18F26K42-I/SP" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "Farnell:2835929" H 0   0   50  0001 C CNN "Supplier1"
 	1    4400 4000
 	1    0    0    -1  
 $EndComp
@@ -274,8 +280,12 @@ U 1 1 5C466052
 P 9950 4100
 F 0 "R42" V 9743 4100 50  0000 C CNN
 F 1 "100k" V 9834 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9880 4100 50  0001 C CNN
-F 3 "~" H 9950 4100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9880 4100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1716726.pdf" H 9950 4100 50  0001 C CNN
+F 4 "Multicomp:MF12 10K" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "1/8" H 0   0   50  0001 C CNN "Power"
+F 6 "Farnell:9342427" H 0   0   50  0001 C CNN "Supplier1"
+F 7 "C" H 0   0   50  0001 C CNN "Type"
 	1    9950 4100
 	0    1    1    0   
 $EndComp

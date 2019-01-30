@@ -315,9 +315,11 @@ L Regulator_Linear:LM317_3PinPackage U1
 U 1 1 5C42413E
 P 6700 1500
 F 0 "U1" H 6700 1742 50  0000 C CNN
-F 1 "LM317_3PinPackage" H 6700 1651 50  0000 C CNN
+F 1 "LM317" H 6700 1651 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6700 1750 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 6700 1500 50  0001 C CNN
+F 4 "ON Semiconductor:LM317BTG " H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "Farnell:1214459" H 0   0   50  0001 C CNN "Supplier1"
 	1    6700 1500
 	1    0    0    -1  
 $EndComp
@@ -539,19 +541,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 6300 2800 6300
 Connection ~ 2000 2800
-$Comp
-L Device:R R15
-U 1 1 5C46F465
-P 2400 6300
-F 0 "R15" V 2011 6300 50  0000 C CNN
-F 1 "10" V 2102 6300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 6300 50  0001 C CNN
-F 3 "~" H 2400 6300 50  0001 C CNN
-F 4 "1/4" V 2193 6300 50  0000 C CNN "Power"
-F 5 "MF" V 2284 6300 50  0000 C CNN "Type"
-	1    2400 6300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2550 6300 2700 6300
 Wire Wire Line
@@ -778,9 +767,11 @@ L Regulator_Linear:LM337_TO220 U2
 U 1 1 5C46147E
 P 6700 4100
 F 0 "U2" H 6700 3950 50  0000 C CNN
-F 1 "LM337_TO220" H 6700 3859 50  0000 C CNN
+F 1 "LM337" H 6700 3859 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6700 3900 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 6700 4100 50  0001 C CNN
+F 4 "ON Semiconductor:LM337BTG" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "Farnell:1652327" H 0   0   50  0001 C CNN "Supplier1"
 	1    6700 4100
 	1    0    0    -1  
 $EndComp
@@ -848,6 +839,8 @@ F 0 "U3" H 5500 6342 50  0000 C CNN
 F 1 "L7805" H 5500 6251 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5525 5950 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5500 6050 50  0001 C CNN
+F 4 "ST:L7805ACV" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "Farnell:1087086" H 0   0   50  0001 C CNN "Supplier1"
 	1    5500 6100
 	1    0    0    -1  
 $EndComp
@@ -947,7 +940,8 @@ F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 5538 2900 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 5500 3050 50  0001 C CNN
 F 4 "63V" H 5382 2959 50  0000 R CNN "Voltage"
 F 5 "Rybicon:63YXF470MEFC12.5X25" V 5500 3050 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144639" V 5500 3050 50  0001 C CNN "Supplier"
+F 6 "" V 5500 3050 50  0001 C CNN "Supplier"
+F 7 "Farnell:1144639" H 0   0   50  0001 C CNN "Supplier1"
 	1    5500 3050
 	-1   0    0    -1  
 $EndComp
@@ -961,7 +955,8 @@ F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 4638 3950 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2321304.pdf" H 4600 4100 50  0001 C CNN
 F 4 "63V" V 4450 4100 50  0000 C CNN "Voltage"
 F 5 "Rybicon:63YXF470MEFC12.5X25" V 4600 4100 50  0001 C CNN "Manufacturer"
-F 6 "Farnell:1144639" V 4600 4100 50  0001 C CNN "Supplier"
+F 6 "" V 4600 4100 50  0001 C CNN "Supplier"
+F 7 "Farnell:1144639" H 0   0   50  0001 C CNN "Supplier1"
 	1    4600 4100
 	0    -1   1    0   
 $EndComp
@@ -1048,19 +1043,6 @@ Wire Wire Line
 	2100 6300 2250 6300
 Wire Wire Line
 	2700 7100 2800 7100
-$Comp
-L Device:R R16
-U 1 1 5C4F636E
-P 2400 7100
-F 0 "R16" V 2011 7100 50  0000 C CNN
-F 1 "10" V 2102 7100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 7100 50  0001 C CNN
-F 3 "~" H 2400 7100 50  0001 C CNN
-F 4 "1/4" V 2193 7100 50  0000 C CNN "Power"
-F 5 "MF" V 2284 7100 50  0000 C CNN "Type"
-	1    2400 7100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2550 7100 2700 7100
 $Comp
@@ -1135,5 +1117,39 @@ F 5 "Rybicon:50YXF47MEFC6.3X11" H 7600 3050 50  0001 C CNN "Manufacturer"
 F 6 "Farnell:1144633" H 7600 3050 50  0001 C CNN "Supplier1"
 	1    7600 3050
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C532B5E
+P 2400 6300
+AR Path="/5C37BC7C/5C532B5E" Ref="R?"  Part="1" 
+AR Path="/5C37BC48/5C532B5E" Ref="R15"  Part="1" 
+F 0 "R15" V 2011 6300 50  0000 C CNN
+F 1 "10" V 2102 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 6300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1723855.pdf" H 2400 6300 50  0001 C CNN
+F 4 "0.6W" V 2193 6300 50  0000 C CNN "Power"
+F 5 "MF" V 2284 6300 50  0000 C CNN "Type"
+F 6 "TE Connectivity:LR1F10R" H 2400 6300 50  0001 C CNN "Manufacturer"
+F 7 "Farnell:2329993" H 2400 6300 50  0001 C CNN "Supplier1"
+	1    2400 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C53820F
+P 2400 7100
+AR Path="/5C37BC7C/5C53820F" Ref="R?"  Part="1" 
+AR Path="/5C37BC48/5C53820F" Ref="R16"  Part="1" 
+F 0 "R16" V 2011 7100 50  0000 C CNN
+F 1 "10" V 2102 7100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 7100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1723855.pdf" H 2400 7100 50  0001 C CNN
+F 4 "0.6W" V 2193 7100 50  0000 C CNN "Power"
+F 5 "MF" V 2284 7100 50  0000 C CNN "Type"
+F 6 "TE Connectivity:LR1F10R" H 2400 7100 50  0001 C CNN "Manufacturer"
+F 7 "Farnell:2329993" H 2400 7100 50  0001 C CNN "Supplier1"
+	1    2400 7100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
