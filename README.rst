@@ -12,14 +12,12 @@ Architecture
 
 The amplifier architecture consists of the following sections:
 
-* Input circuit
-* Power amplifier
-* Power supply
-* Control and Monitoring Unit (CMU)
+* Input section
+* Output section
+* Power amplifier with power supply and Control and Monitoring Unit (CMU)
 
-All sections are located on a single PCB.
 
-Input circuit
+Input section
 =============
 
 Input EMI suppression
